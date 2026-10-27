@@ -1,0 +1,6 @@
+services:
+  zenith:
+    build: .
+    container_name: zenith-dashboard
+    ports:
+      - "8501:8501"

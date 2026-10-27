@@ -21,9 +21,39 @@ def generate_predictions():
     risk_model = joblib.load(RISK_MODEL_PATH)
     anomaly_model = joblib.load(ANOMALY_MODEL_PATH)
 
-    # 3. Load telemetry and generate features
+
+    # Load telemetry
     telemetry = pd.read_csv(TELEMETRY_PATH)
+
+    # Validate the input
+    if telemetry.empty:
+        raise ValueError("Telemetry file is empty.")
+
+    required_columns = [
+        "chip_id",
+        "burn_in_hour",
+    ]
+
+    missing_columns = [
+        column
+        for column in required_columns
+        if column not in telemetry.columns
+    ]
+
+    if missing_columns:
+        raise ValueError(
+            f"Telemetry is missing required columns: {missing_columns}"
+        )
+
+    if telemetry["chip_id"].isna().any():
+        raise ValueError("Telemetry contains missing chip IDs.")
+
+    if telemetry["burn_in_hour"].isna().any():
+        raise ValueError("Telemetry contains missing burn-in hours.")
+
+    # Generate chip-level features
     features = build_features(telemetry)
+    
 
     # 4. Validate the generated features
     if features.empty:
