@@ -1,0 +1,601 @@
+strategy,fold,chip_id,actual,predicted,correct
+Balanced,1,ZN-01-002,GREEN,GREEN,True
+Balanced,1,ZN-01-007,GREEN,GREEN,True
+Balanced,1,ZN-01-013,GREEN,GREEN,True
+Balanced,1,ZN-01-019,GREEN,GREEN,True
+Balanced,1,ZN-01-023,GREEN,GREEN,True
+Balanced,1,ZN-01-025,GREEN,GREEN,True
+Balanced,1,ZN-02-003,GREEN,GREEN,True
+Balanced,1,ZN-02-007,GREEN,GREEN,True
+Balanced,1,ZN-02-021,RED,RED,True
+Balanced,1,ZN-02-022,RED,RED,True
+Balanced,1,ZN-02-024,GREEN,GREEN,True
+Balanced,1,ZN-02-025,RED,RED,True
+Balanced,1,ZN-02-032,GREEN,GREEN,True
+Balanced,1,ZN-02-033,GREEN,GREEN,True
+Balanced,1,ZN-03-002,GREEN,GREEN,True
+Balanced,1,ZN-03-007,GREEN,GREEN,True
+Balanced,1,ZN-03-008,GREEN,GREEN,True
+Balanced,1,ZN-03-009,RED,RED,True
+Balanced,1,ZN-03-010,AMBER,AMBER,True
+Balanced,1,ZN-03-011,GREEN,GREEN,True
+Balanced,1,ZN-03-013,GREEN,GREEN,True
+Balanced,1,ZN-03-018,RED,RED,True
+Balanced,1,ZN-03-020,GREEN,GREEN,True
+Balanced,1,ZN-03-023,GREEN,GREEN,True
+Balanced,1,ZN-03-029,AMBER,AMBER,True
+Balanced,1,ZN-03-030,GREEN,GREEN,True
+Balanced,1,ZN-03-033,RED,RED,True
+Balanced,1,ZN-03-036,GREEN,GREEN,True
+Balanced,1,ZN-03-037,GREEN,GREEN,True
+Balanced,1,ZN-03-038,AMBER,AMBER,True
+Balanced,1,ZN-04-033,GREEN,GREEN,True
+Balanced,1,ZN-04-035,GREEN,GREEN,True
+Balanced,1,ZN-04-036,GREEN,GREEN,True
+Balanced,1,ZN-05-008,GREEN,GREEN,True
+Balanced,1,ZN-05-011,AMBER,AMBER,True
+Balanced,1,ZN-05-021,GREEN,GREEN,True
+Balanced,1,ZN-05-022,GREEN,GREEN,True
+Balanced,1,ZN-05-028,GREEN,GREEN,True
+Balanced,1,ZN-05-031,GREEN,GREEN,True
+Balanced,1,ZN-05-039,GREEN,GREEN,True
+Balanced,2,ZN-01-003,GREEN,GREEN,True
+Balanced,2,ZN-01-005,GREEN,GREEN,True
+Balanced,2,ZN-01-015,GREEN,GREEN,True
+Balanced,2,ZN-01-017,GREEN,GREEN,True
+Balanced,2,ZN-01-031,RED,RED,True
+Balanced,2,ZN-01-033,RED,RED,True
+Balanced,2,ZN-01-034,GREEN,GREEN,True
+Balanced,2,ZN-02-002,GREEN,GREEN,True
+Balanced,2,ZN-02-006,GREEN,GREEN,True
+Balanced,2,ZN-02-008,GREEN,GREEN,True
+Balanced,2,ZN-02-010,GREEN,GREEN,True
+Balanced,2,ZN-02-014,GREEN,GREEN,True
+Balanced,2,ZN-02-028,GREEN,GREEN,True
+Balanced,2,ZN-02-029,GREEN,GREEN,True
+Balanced,2,ZN-02-031,GREEN,GREEN,True
+Balanced,2,ZN-02-038,GREEN,GREEN,True
+Balanced,2,ZN-02-039,RED,RED,True
+Balanced,2,ZN-03-014,GREEN,GREEN,True
+Balanced,2,ZN-03-027,GREEN,GREEN,True
+Balanced,2,ZN-03-032,GREEN,GREEN,True
+Balanced,2,ZN-04-001,AMBER,AMBER,True
+Balanced,2,ZN-04-006,GREEN,GREEN,True
+Balanced,2,ZN-04-014,GREEN,GREEN,True
+Balanced,2,ZN-04-021,GREEN,GREEN,True
+Balanced,2,ZN-04-026,RED,RED,True
+Balanced,2,ZN-04-032,GREEN,GREEN,True
+Balanced,2,ZN-04-034,AMBER,AMBER,True
+Balanced,2,ZN-04-038,GREEN,GREEN,True
+Balanced,2,ZN-04-039,GREEN,GREEN,True
+Balanced,2,ZN-05-001,RED,RED,True
+Balanced,2,ZN-05-003,AMBER,AMBER,True
+Balanced,2,ZN-05-004,GREEN,GREEN,True
+Balanced,2,ZN-05-006,GREEN,GREEN,True
+Balanced,2,ZN-05-007,AMBER,AMBER,True
+Balanced,2,ZN-05-010,GREEN,GREEN,True
+Balanced,2,ZN-05-019,GREEN,GREEN,True
+Balanced,2,ZN-05-023,GREEN,GREEN,True
+Balanced,2,ZN-05-030,RED,RED,True
+Balanced,2,ZN-05-036,GREEN,GREEN,True
+Balanced,2,ZN-05-038,GREEN,GREEN,True
+Balanced,3,ZN-01-006,GREEN,GREEN,True
+Balanced,3,ZN-01-010,RED,RED,True
+Balanced,3,ZN-01-022,GREEN,GREEN,True
+Balanced,3,ZN-01-026,GREEN,GREEN,True
+Balanced,3,ZN-01-027,RED,AMBER,False
+Balanced,3,ZN-01-028,GREEN,GREEN,True
+Balanced,3,ZN-01-029,GREEN,GREEN,True
+Balanced,3,ZN-01-038,GREEN,GREEN,True
+Balanced,3,ZN-02-009,RED,RED,True
+Balanced,3,ZN-02-013,GREEN,GREEN,True
+Balanced,3,ZN-02-015,AMBER,AMBER,True
+Balanced,3,ZN-02-016,AMBER,GREEN,False
+Balanced,3,ZN-02-018,GREEN,GREEN,True
+Balanced,3,ZN-02-019,GREEN,GREEN,True
+Balanced,3,ZN-02-023,RED,RED,True
+Balanced,3,ZN-02-030,GREEN,GREEN,True
+Balanced,3,ZN-02-034,RED,RED,True
+Balanced,3,ZN-02-037,GREEN,GREEN,True
+Balanced,3,ZN-03-005,GREEN,GREEN,True
+Balanced,3,ZN-03-017,GREEN,GREEN,True
+Balanced,3,ZN-03-026,GREEN,GREEN,True
+Balanced,3,ZN-03-040,GREEN,GREEN,True
+Balanced,3,ZN-04-002,GREEN,GREEN,True
+Balanced,3,ZN-04-004,GREEN,GREEN,True
+Balanced,3,ZN-04-009,GREEN,GREEN,True
+Balanced,3,ZN-04-011,AMBER,AMBER,True
+Balanced,3,ZN-04-012,GREEN,GREEN,True
+Balanced,3,ZN-04-019,GREEN,GREEN,True
+Balanced,3,ZN-04-020,GREEN,GREEN,True
+Balanced,3,ZN-04-027,GREEN,GREEN,True
+Balanced,3,ZN-04-040,GREEN,GREEN,True
+Balanced,3,ZN-05-002,GREEN,GREEN,True
+Balanced,3,ZN-05-005,RED,RED,True
+Balanced,3,ZN-05-012,GREEN,GREEN,True
+Balanced,3,ZN-05-016,GREEN,GREEN,True
+Balanced,3,ZN-05-017,AMBER,GREEN,False
+Balanced,3,ZN-05-020,GREEN,GREEN,True
+Balanced,3,ZN-05-024,GREEN,GREEN,True
+Balanced,3,ZN-05-029,GREEN,GREEN,True
+Balanced,3,ZN-05-035,GREEN,GREEN,True
+Balanced,4,ZN-01-008,GREEN,GREEN,True
+Balanced,4,ZN-01-009,GREEN,GREEN,True
+Balanced,4,ZN-01-011,GREEN,GREEN,True
+Balanced,4,ZN-01-014,AMBER,AMBER,True
+Balanced,4,ZN-01-016,RED,RED,True
+Balanced,4,ZN-01-018,GREEN,GREEN,True
+Balanced,4,ZN-01-020,GREEN,GREEN,True
+Balanced,4,ZN-01-021,GREEN,GREEN,True
+Balanced,4,ZN-01-024,GREEN,GREEN,True
+Balanced,4,ZN-01-030,GREEN,GREEN,True
+Balanced,4,ZN-01-032,AMBER,GREEN,False
+Balanced,4,ZN-01-036,AMBER,GREEN,False
+Balanced,4,ZN-01-037,GREEN,GREEN,True
+Balanced,4,ZN-02-001,GREEN,GREEN,True
+Balanced,4,ZN-02-012,GREEN,GREEN,True
+Balanced,4,ZN-02-017,GREEN,GREEN,True
+Balanced,4,ZN-02-026,GREEN,GREEN,True
+Balanced,4,ZN-02-036,GREEN,GREEN,True
+Balanced,4,ZN-02-040,RED,RED,True
+Balanced,4,ZN-03-001,GREEN,GREEN,True
+Balanced,4,ZN-03-004,GREEN,GREEN,True
+Balanced,4,ZN-03-006,GREEN,GREEN,True
+Balanced,4,ZN-03-015,GREEN,GREEN,True
+Balanced,4,ZN-03-028,GREEN,GREEN,True
+Balanced,4,ZN-03-034,RED,RED,True
+Balanced,4,ZN-04-005,RED,RED,True
+Balanced,4,ZN-04-007,GREEN,GREEN,True
+Balanced,4,ZN-04-015,GREEN,GREEN,True
+Balanced,4,ZN-04-017,GREEN,GREEN,True
+Balanced,4,ZN-04-023,RED,AMBER,False
+Balanced,4,ZN-04-028,GREEN,GREEN,True
+Balanced,4,ZN-04-029,GREEN,GREEN,True
+Balanced,4,ZN-04-030,GREEN,GREEN,True
+Balanced,4,ZN-04-031,GREEN,GREEN,True
+Balanced,4,ZN-04-037,GREEN,GREEN,True
+Balanced,4,ZN-05-014,GREEN,GREEN,True
+Balanced,4,ZN-05-015,GREEN,GREEN,True
+Balanced,4,ZN-05-025,RED,RED,True
+Balanced,4,ZN-05-026,AMBER,AMBER,True
+Balanced,4,ZN-05-037,GREEN,GREEN,True
+Balanced,5,ZN-01-001,RED,RED,True
+Balanced,5,ZN-01-004,GREEN,GREEN,True
+Balanced,5,ZN-01-012,GREEN,GREEN,True
+Balanced,5,ZN-01-035,AMBER,GREEN,False
+Balanced,5,ZN-01-039,RED,RED,True
+Balanced,5,ZN-01-040,RED,AMBER,False
+Balanced,5,ZN-02-004,GREEN,GREEN,True
+Balanced,5,ZN-02-005,GREEN,GREEN,True
+Balanced,5,ZN-02-011,GREEN,GREEN,True
+Balanced,5,ZN-02-020,GREEN,GREEN,True
+Balanced,5,ZN-02-027,GREEN,GREEN,True
+Balanced,5,ZN-02-035,GREEN,GREEN,True
+Balanced,5,ZN-03-003,GREEN,GREEN,True
+Balanced,5,ZN-03-012,GREEN,GREEN,True
+Balanced,5,ZN-03-016,GREEN,GREEN,True
+Balanced,5,ZN-03-019,RED,RED,True
+Balanced,5,ZN-03-021,GREEN,GREEN,True
+Balanced,5,ZN-03-022,GREEN,GREEN,True
+Balanced,5,ZN-03-024,GREEN,GREEN,True
+Balanced,5,ZN-03-025,GREEN,GREEN,True
+Balanced,5,ZN-03-031,AMBER,AMBER,True
+Balanced,5,ZN-03-035,GREEN,GREEN,True
+Balanced,5,ZN-03-039,GREEN,GREEN,True
+Balanced,5,ZN-04-003,RED,RED,True
+Balanced,5,ZN-04-008,AMBER,GREEN,False
+Balanced,5,ZN-04-010,GREEN,GREEN,True
+Balanced,5,ZN-04-013,GREEN,GREEN,True
+Balanced,5,ZN-04-016,GREEN,GREEN,True
+Balanced,5,ZN-04-018,RED,RED,True
+Balanced,5,ZN-04-022,GREEN,GREEN,True
+Balanced,5,ZN-04-024,GREEN,GREEN,True
+Balanced,5,ZN-04-025,GREEN,GREEN,True
+Balanced,5,ZN-05-009,GREEN,GREEN,True
+Balanced,5,ZN-05-013,GREEN,GREEN,True
+Balanced,5,ZN-05-018,GREEN,GREEN,True
+Balanced,5,ZN-05-027,GREEN,GREEN,True
+Balanced,5,ZN-05-032,GREEN,GREEN,True
+Balanced,5,ZN-05-033,GREEN,GREEN,True
+Balanced,5,ZN-05-034,GREEN,GREEN,True
+Balanced,5,ZN-05-040,AMBER,AMBER,True
+No class weighting,1,ZN-01-002,GREEN,GREEN,True
+No class weighting,1,ZN-01-007,GREEN,GREEN,True
+No class weighting,1,ZN-01-013,GREEN,GREEN,True
+No class weighting,1,ZN-01-019,GREEN,GREEN,True
+No class weighting,1,ZN-01-023,GREEN,GREEN,True
+No class weighting,1,ZN-01-025,GREEN,GREEN,True
+No class weighting,1,ZN-02-003,GREEN,GREEN,True
+No class weighting,1,ZN-02-007,GREEN,GREEN,True
+No class weighting,1,ZN-02-021,RED,RED,True
+No class weighting,1,ZN-02-022,RED,RED,True
+No class weighting,1,ZN-02-024,GREEN,GREEN,True
+No class weighting,1,ZN-02-025,RED,RED,True
+No class weighting,1,ZN-02-032,GREEN,GREEN,True
+No class weighting,1,ZN-02-033,GREEN,GREEN,True
+No class weighting,1,ZN-03-002,GREEN,GREEN,True
+No class weighting,1,ZN-03-007,GREEN,GREEN,True
+No class weighting,1,ZN-03-008,GREEN,GREEN,True
+No class weighting,1,ZN-03-009,RED,RED,True
+No class weighting,1,ZN-03-010,AMBER,GREEN,False
+No class weighting,1,ZN-03-011,GREEN,GREEN,True
+No class weighting,1,ZN-03-013,GREEN,GREEN,True
+No class weighting,1,ZN-03-018,RED,RED,True
+No class weighting,1,ZN-03-020,GREEN,GREEN,True
+No class weighting,1,ZN-03-023,GREEN,GREEN,True
+No class weighting,1,ZN-03-029,AMBER,AMBER,True
+No class weighting,1,ZN-03-030,GREEN,GREEN,True
+No class weighting,1,ZN-03-033,RED,RED,True
+No class weighting,1,ZN-03-036,GREEN,GREEN,True
+No class weighting,1,ZN-03-037,GREEN,GREEN,True
+No class weighting,1,ZN-03-038,AMBER,AMBER,True
+No class weighting,1,ZN-04-033,GREEN,GREEN,True
+No class weighting,1,ZN-04-035,GREEN,GREEN,True
+No class weighting,1,ZN-04-036,GREEN,GREEN,True
+No class weighting,1,ZN-05-008,GREEN,GREEN,True
+No class weighting,1,ZN-05-011,AMBER,AMBER,True
+No class weighting,1,ZN-05-021,GREEN,GREEN,True
+No class weighting,1,ZN-05-022,GREEN,GREEN,True
+No class weighting,1,ZN-05-028,GREEN,GREEN,True
+No class weighting,1,ZN-05-031,GREEN,GREEN,True
+No class weighting,1,ZN-05-039,GREEN,GREEN,True
+No class weighting,2,ZN-01-003,GREEN,GREEN,True
+No class weighting,2,ZN-01-005,GREEN,GREEN,True
+No class weighting,2,ZN-01-015,GREEN,GREEN,True
+No class weighting,2,ZN-01-017,GREEN,GREEN,True
+No class weighting,2,ZN-01-031,RED,RED,True
+No class weighting,2,ZN-01-033,RED,RED,True
+No class weighting,2,ZN-01-034,GREEN,GREEN,True
+No class weighting,2,ZN-02-002,GREEN,GREEN,True
+No class weighting,2,ZN-02-006,GREEN,GREEN,True
+No class weighting,2,ZN-02-008,GREEN,GREEN,True
+No class weighting,2,ZN-02-010,GREEN,GREEN,True
+No class weighting,2,ZN-02-014,GREEN,GREEN,True
+No class weighting,2,ZN-02-028,GREEN,GREEN,True
+No class weighting,2,ZN-02-029,GREEN,GREEN,True
+No class weighting,2,ZN-02-031,GREEN,GREEN,True
+No class weighting,2,ZN-02-038,GREEN,GREEN,True
+No class weighting,2,ZN-02-039,RED,RED,True
+No class weighting,2,ZN-03-014,GREEN,GREEN,True
+No class weighting,2,ZN-03-027,GREEN,GREEN,True
+No class weighting,2,ZN-03-032,GREEN,GREEN,True
+No class weighting,2,ZN-04-001,AMBER,AMBER,True
+No class weighting,2,ZN-04-006,GREEN,GREEN,True
+No class weighting,2,ZN-04-014,GREEN,GREEN,True
+No class weighting,2,ZN-04-021,GREEN,GREEN,True
+No class weighting,2,ZN-04-026,RED,RED,True
+No class weighting,2,ZN-04-032,GREEN,GREEN,True
+No class weighting,2,ZN-04-034,AMBER,AMBER,True
+No class weighting,2,ZN-04-038,GREEN,GREEN,True
+No class weighting,2,ZN-04-039,GREEN,GREEN,True
+No class weighting,2,ZN-05-001,RED,RED,True
+No class weighting,2,ZN-05-003,AMBER,AMBER,True
+No class weighting,2,ZN-05-004,GREEN,GREEN,True
+No class weighting,2,ZN-05-006,GREEN,GREEN,True
+No class weighting,2,ZN-05-007,AMBER,AMBER,True
+No class weighting,2,ZN-05-010,GREEN,GREEN,True
+No class weighting,2,ZN-05-019,GREEN,GREEN,True
+No class weighting,2,ZN-05-023,GREEN,GREEN,True
+No class weighting,2,ZN-05-030,RED,RED,True
+No class weighting,2,ZN-05-036,GREEN,GREEN,True
+No class weighting,2,ZN-05-038,GREEN,GREEN,True
+No class weighting,3,ZN-01-006,GREEN,GREEN,True
+No class weighting,3,ZN-01-010,RED,RED,True
+No class weighting,3,ZN-01-022,GREEN,GREEN,True
+No class weighting,3,ZN-01-026,GREEN,GREEN,True
+No class weighting,3,ZN-01-027,RED,AMBER,False
+No class weighting,3,ZN-01-028,GREEN,GREEN,True
+No class weighting,3,ZN-01-029,GREEN,GREEN,True
+No class weighting,3,ZN-01-038,GREEN,GREEN,True
+No class weighting,3,ZN-02-009,RED,RED,True
+No class weighting,3,ZN-02-013,GREEN,GREEN,True
+No class weighting,3,ZN-02-015,AMBER,AMBER,True
+No class weighting,3,ZN-02-016,AMBER,AMBER,True
+No class weighting,3,ZN-02-018,GREEN,GREEN,True
+No class weighting,3,ZN-02-019,GREEN,GREEN,True
+No class weighting,3,ZN-02-023,RED,RED,True
+No class weighting,3,ZN-02-030,GREEN,GREEN,True
+No class weighting,3,ZN-02-034,RED,AMBER,False
+No class weighting,3,ZN-02-037,GREEN,GREEN,True
+No class weighting,3,ZN-03-005,GREEN,GREEN,True
+No class weighting,3,ZN-03-017,GREEN,GREEN,True
+No class weighting,3,ZN-03-026,GREEN,GREEN,True
+No class weighting,3,ZN-03-040,GREEN,GREEN,True
+No class weighting,3,ZN-04-002,GREEN,GREEN,True
+No class weighting,3,ZN-04-004,GREEN,GREEN,True
+No class weighting,3,ZN-04-009,GREEN,GREEN,True
+No class weighting,3,ZN-04-011,AMBER,AMBER,True
+No class weighting,3,ZN-04-012,GREEN,GREEN,True
+No class weighting,3,ZN-04-019,GREEN,GREEN,True
+No class weighting,3,ZN-04-020,GREEN,GREEN,True
+No class weighting,3,ZN-04-027,GREEN,GREEN,True
+No class weighting,3,ZN-04-040,GREEN,GREEN,True
+No class weighting,3,ZN-05-002,GREEN,GREEN,True
+No class weighting,3,ZN-05-005,RED,RED,True
+No class weighting,3,ZN-05-012,GREEN,GREEN,True
+No class weighting,3,ZN-05-016,GREEN,GREEN,True
+No class weighting,3,ZN-05-017,AMBER,GREEN,False
+No class weighting,3,ZN-05-020,GREEN,GREEN,True
+No class weighting,3,ZN-05-024,GREEN,GREEN,True
+No class weighting,3,ZN-05-029,GREEN,GREEN,True
+No class weighting,3,ZN-05-035,GREEN,GREEN,True
+No class weighting,4,ZN-01-008,GREEN,GREEN,True
+No class weighting,4,ZN-01-009,GREEN,GREEN,True
+No class weighting,4,ZN-01-011,GREEN,GREEN,True
+No class weighting,4,ZN-01-014,AMBER,AMBER,True
+No class weighting,4,ZN-01-016,RED,RED,True
+No class weighting,4,ZN-01-018,GREEN,GREEN,True
+No class weighting,4,ZN-01-020,GREEN,GREEN,True
+No class weighting,4,ZN-01-021,GREEN,GREEN,True
+No class weighting,4,ZN-01-024,GREEN,GREEN,True
+No class weighting,4,ZN-01-030,GREEN,GREEN,True
+No class weighting,4,ZN-01-032,AMBER,GREEN,False
+No class weighting,4,ZN-01-036,AMBER,AMBER,True
+No class weighting,4,ZN-01-037,GREEN,GREEN,True
+No class weighting,4,ZN-02-001,GREEN,GREEN,True
+No class weighting,4,ZN-02-012,GREEN,GREEN,True
+No class weighting,4,ZN-02-017,GREEN,GREEN,True
+No class weighting,4,ZN-02-026,GREEN,GREEN,True
+No class weighting,4,ZN-02-036,GREEN,GREEN,True
+No class weighting,4,ZN-02-040,RED,RED,True
+No class weighting,4,ZN-03-001,GREEN,GREEN,True
+No class weighting,4,ZN-03-004,GREEN,GREEN,True
+No class weighting,4,ZN-03-006,GREEN,GREEN,True
+No class weighting,4,ZN-03-015,GREEN,GREEN,True
+No class weighting,4,ZN-03-028,GREEN,GREEN,True
+No class weighting,4,ZN-03-034,RED,RED,True
+No class weighting,4,ZN-04-005,RED,RED,True
+No class weighting,4,ZN-04-007,GREEN,GREEN,True
+No class weighting,4,ZN-04-015,GREEN,GREEN,True
+No class weighting,4,ZN-04-017,GREEN,GREEN,True
+No class weighting,4,ZN-04-023,RED,AMBER,False
+No class weighting,4,ZN-04-028,GREEN,GREEN,True
+No class weighting,4,ZN-04-029,GREEN,GREEN,True
+No class weighting,4,ZN-04-030,GREEN,GREEN,True
+No class weighting,4,ZN-04-031,GREEN,GREEN,True
+No class weighting,4,ZN-04-037,GREEN,GREEN,True
+No class weighting,4,ZN-05-014,GREEN,GREEN,True
+No class weighting,4,ZN-05-015,GREEN,GREEN,True
+No class weighting,4,ZN-05-025,RED,RED,True
+No class weighting,4,ZN-05-026,AMBER,AMBER,True
+No class weighting,4,ZN-05-037,GREEN,GREEN,True
+No class weighting,5,ZN-01-001,RED,RED,True
+No class weighting,5,ZN-01-004,GREEN,GREEN,True
+No class weighting,5,ZN-01-012,GREEN,GREEN,True
+No class weighting,5,ZN-01-035,AMBER,RED,False
+No class weighting,5,ZN-01-039,RED,RED,True
+No class weighting,5,ZN-01-040,RED,AMBER,False
+No class weighting,5,ZN-02-004,GREEN,GREEN,True
+No class weighting,5,ZN-02-005,GREEN,GREEN,True
+No class weighting,5,ZN-02-011,GREEN,GREEN,True
+No class weighting,5,ZN-02-020,GREEN,GREEN,True
+No class weighting,5,ZN-02-027,GREEN,GREEN,True
+No class weighting,5,ZN-02-035,GREEN,GREEN,True
+No class weighting,5,ZN-03-003,GREEN,GREEN,True
+No class weighting,5,ZN-03-012,GREEN,GREEN,True
+No class weighting,5,ZN-03-016,GREEN,GREEN,True
+No class weighting,5,ZN-03-019,RED,RED,True
+No class weighting,5,ZN-03-021,GREEN,GREEN,True
+No class weighting,5,ZN-03-022,GREEN,GREEN,True
+No class weighting,5,ZN-03-024,GREEN,GREEN,True
+No class weighting,5,ZN-03-025,GREEN,GREEN,True
+No class weighting,5,ZN-03-031,AMBER,AMBER,True
+No class weighting,5,ZN-03-035,GREEN,GREEN,True
+No class weighting,5,ZN-03-039,GREEN,GREEN,True
+No class weighting,5,ZN-04-003,RED,RED,True
+No class weighting,5,ZN-04-008,AMBER,GREEN,False
+No class weighting,5,ZN-04-010,GREEN,GREEN,True
+No class weighting,5,ZN-04-013,GREEN,GREEN,True
+No class weighting,5,ZN-04-016,GREEN,GREEN,True
+No class weighting,5,ZN-04-018,RED,RED,True
+No class weighting,5,ZN-04-022,GREEN,GREEN,True
+No class weighting,5,ZN-04-024,GREEN,GREEN,True
+No class weighting,5,ZN-04-025,GREEN,GREEN,True
+No class weighting,5,ZN-05-009,GREEN,GREEN,True
+No class weighting,5,ZN-05-013,GREEN,GREEN,True
+No class weighting,5,ZN-05-018,GREEN,GREEN,True
+No class weighting,5,ZN-05-027,GREEN,GREEN,True
+No class weighting,5,ZN-05-032,GREEN,GREEN,True
+No class weighting,5,ZN-05-033,GREEN,GREEN,True
+No class weighting,5,ZN-05-034,GREEN,GREEN,True
+No class weighting,5,ZN-05-040,AMBER,AMBER,True
+Custom weighting,1,ZN-01-002,GREEN,GREEN,True
+Custom weighting,1,ZN-01-007,GREEN,GREEN,True
+Custom weighting,1,ZN-01-013,GREEN,GREEN,True
+Custom weighting,1,ZN-01-019,GREEN,GREEN,True
+Custom weighting,1,ZN-01-023,GREEN,GREEN,True
+Custom weighting,1,ZN-01-025,GREEN,GREEN,True
+Custom weighting,1,ZN-02-003,GREEN,GREEN,True
+Custom weighting,1,ZN-02-007,GREEN,GREEN,True
+Custom weighting,1,ZN-02-021,RED,RED,True
+Custom weighting,1,ZN-02-022,RED,RED,True
+Custom weighting,1,ZN-02-024,GREEN,GREEN,True
+Custom weighting,1,ZN-02-025,RED,RED,True
+Custom weighting,1,ZN-02-032,GREEN,GREEN,True
+Custom weighting,1,ZN-02-033,GREEN,GREEN,True
+Custom weighting,1,ZN-03-002,GREEN,GREEN,True
+Custom weighting,1,ZN-03-007,GREEN,GREEN,True
+Custom weighting,1,ZN-03-008,GREEN,GREEN,True
+Custom weighting,1,ZN-03-009,RED,RED,True
+Custom weighting,1,ZN-03-010,AMBER,AMBER,True
+Custom weighting,1,ZN-03-011,GREEN,GREEN,True
+Custom weighting,1,ZN-03-013,GREEN,GREEN,True
+Custom weighting,1,ZN-03-018,RED,RED,True
+Custom weighting,1,ZN-03-020,GREEN,GREEN,True
+Custom weighting,1,ZN-03-023,GREEN,GREEN,True
+Custom weighting,1,ZN-03-029,AMBER,AMBER,True
+Custom weighting,1,ZN-03-030,GREEN,GREEN,True
+Custom weighting,1,ZN-03-033,RED,RED,True
+Custom weighting,1,ZN-03-036,GREEN,GREEN,True
+Custom weighting,1,ZN-03-037,GREEN,GREEN,True
+Custom weighting,1,ZN-03-038,AMBER,AMBER,True
+Custom weighting,1,ZN-04-033,GREEN,GREEN,True
+Custom weighting,1,ZN-04-035,GREEN,GREEN,True
+Custom weighting,1,ZN-04-036,GREEN,GREEN,True
+Custom weighting,1,ZN-05-008,GREEN,GREEN,True
+Custom weighting,1,ZN-05-011,AMBER,AMBER,True
+Custom weighting,1,ZN-05-021,GREEN,GREEN,True
+Custom weighting,1,ZN-05-022,GREEN,GREEN,True
+Custom weighting,1,ZN-05-028,GREEN,GREEN,True
+Custom weighting,1,ZN-05-031,GREEN,GREEN,True
+Custom weighting,1,ZN-05-039,GREEN,GREEN,True
+Custom weighting,2,ZN-01-003,GREEN,GREEN,True
+Custom weighting,2,ZN-01-005,GREEN,GREEN,True
+Custom weighting,2,ZN-01-015,GREEN,GREEN,True
+Custom weighting,2,ZN-01-017,GREEN,GREEN,True
+Custom weighting,2,ZN-01-031,RED,RED,True
+Custom weighting,2,ZN-01-033,RED,RED,True
+Custom weighting,2,ZN-01-034,GREEN,GREEN,True
+Custom weighting,2,ZN-02-002,GREEN,GREEN,True
+Custom weighting,2,ZN-02-006,GREEN,GREEN,True
+Custom weighting,2,ZN-02-008,GREEN,GREEN,True
+Custom weighting,2,ZN-02-010,GREEN,GREEN,True
+Custom weighting,2,ZN-02-014,GREEN,GREEN,True
+Custom weighting,2,ZN-02-028,GREEN,GREEN,True
+Custom weighting,2,ZN-02-029,GREEN,GREEN,True
+Custom weighting,2,ZN-02-031,GREEN,GREEN,True
+Custom weighting,2,ZN-02-038,GREEN,GREEN,True
+Custom weighting,2,ZN-02-039,RED,RED,True
+Custom weighting,2,ZN-03-014,GREEN,GREEN,True
+Custom weighting,2,ZN-03-027,GREEN,GREEN,True
+Custom weighting,2,ZN-03-032,GREEN,GREEN,True
+Custom weighting,2,ZN-04-001,AMBER,AMBER,True
+Custom weighting,2,ZN-04-006,GREEN,GREEN,True
+Custom weighting,2,ZN-04-014,GREEN,GREEN,True
+Custom weighting,2,ZN-04-021,GREEN,GREEN,True
+Custom weighting,2,ZN-04-026,RED,RED,True
+Custom weighting,2,ZN-04-032,GREEN,GREEN,True
+Custom weighting,2,ZN-04-034,AMBER,AMBER,True
+Custom weighting,2,ZN-04-038,GREEN,GREEN,True
+Custom weighting,2,ZN-04-039,GREEN,GREEN,True
+Custom weighting,2,ZN-05-001,RED,RED,True
+Custom weighting,2,ZN-05-003,AMBER,AMBER,True
+Custom weighting,2,ZN-05-004,GREEN,GREEN,True
+Custom weighting,2,ZN-05-006,GREEN,GREEN,True
+Custom weighting,2,ZN-05-007,AMBER,AMBER,True
+Custom weighting,2,ZN-05-010,GREEN,GREEN,True
+Custom weighting,2,ZN-05-019,GREEN,GREEN,True
+Custom weighting,2,ZN-05-023,GREEN,GREEN,True
+Custom weighting,2,ZN-05-030,RED,RED,True
+Custom weighting,2,ZN-05-036,GREEN,GREEN,True
+Custom weighting,2,ZN-05-038,GREEN,GREEN,True
+Custom weighting,3,ZN-01-006,GREEN,GREEN,True
+Custom weighting,3,ZN-01-010,RED,RED,True
+Custom weighting,3,ZN-01-022,GREEN,GREEN,True
+Custom weighting,3,ZN-01-026,GREEN,GREEN,True
+Custom weighting,3,ZN-01-027,RED,AMBER,False
+Custom weighting,3,ZN-01-028,GREEN,GREEN,True
+Custom weighting,3,ZN-01-029,GREEN,GREEN,True
+Custom weighting,3,ZN-01-038,GREEN,GREEN,True
+Custom weighting,3,ZN-02-009,RED,RED,True
+Custom weighting,3,ZN-02-013,GREEN,GREEN,True
+Custom weighting,3,ZN-02-015,AMBER,AMBER,True
+Custom weighting,3,ZN-02-016,AMBER,AMBER,True
+Custom weighting,3,ZN-02-018,GREEN,GREEN,True
+Custom weighting,3,ZN-02-019,GREEN,GREEN,True
+Custom weighting,3,ZN-02-023,RED,RED,True
+Custom weighting,3,ZN-02-030,GREEN,GREEN,True
+Custom weighting,3,ZN-02-034,RED,AMBER,False
+Custom weighting,3,ZN-02-037,GREEN,GREEN,True
+Custom weighting,3,ZN-03-005,GREEN,GREEN,True
+Custom weighting,3,ZN-03-017,GREEN,GREEN,True
+Custom weighting,3,ZN-03-026,GREEN,GREEN,True
+Custom weighting,3,ZN-03-040,GREEN,GREEN,True
+Custom weighting,3,ZN-04-002,GREEN,GREEN,True
+Custom weighting,3,ZN-04-004,GREEN,GREEN,True
+Custom weighting,3,ZN-04-009,GREEN,GREEN,True
+Custom weighting,3,ZN-04-011,AMBER,AMBER,True
+Custom weighting,3,ZN-04-012,GREEN,GREEN,True
+Custom weighting,3,ZN-04-019,GREEN,GREEN,True
+Custom weighting,3,ZN-04-020,GREEN,GREEN,True
+Custom weighting,3,ZN-04-027,GREEN,GREEN,True
+Custom weighting,3,ZN-04-040,GREEN,GREEN,True
+Custom weighting,3,ZN-05-002,GREEN,GREEN,True
+Custom weighting,3,ZN-05-005,RED,RED,True
+Custom weighting,3,ZN-05-012,GREEN,GREEN,True
+Custom weighting,3,ZN-05-016,GREEN,GREEN,True
+Custom weighting,3,ZN-05-017,AMBER,GREEN,False
+Custom weighting,3,ZN-05-020,GREEN,GREEN,True
+Custom weighting,3,ZN-05-024,GREEN,GREEN,True
+Custom weighting,3,ZN-05-029,GREEN,GREEN,True
+Custom weighting,3,ZN-05-035,GREEN,GREEN,True
+Custom weighting,4,ZN-01-008,GREEN,GREEN,True
+Custom weighting,4,ZN-01-009,GREEN,GREEN,True
+Custom weighting,4,ZN-01-011,GREEN,GREEN,True
+Custom weighting,4,ZN-01-014,AMBER,AMBER,True
+Custom weighting,4,ZN-01-016,RED,RED,True
+Custom weighting,4,ZN-01-018,GREEN,GREEN,True
+Custom weighting,4,ZN-01-020,GREEN,GREEN,True
+Custom weighting,4,ZN-01-021,GREEN,GREEN,True
+Custom weighting,4,ZN-01-024,GREEN,GREEN,True
+Custom weighting,4,ZN-01-030,GREEN,GREEN,True
+Custom weighting,4,ZN-01-032,AMBER,GREEN,False
+Custom weighting,4,ZN-01-036,AMBER,AMBER,True
+Custom weighting,4,ZN-01-037,GREEN,GREEN,True
+Custom weighting,4,ZN-02-001,GREEN,GREEN,True
+Custom weighting,4,ZN-02-012,GREEN,GREEN,True
+Custom weighting,4,ZN-02-017,GREEN,GREEN,True
+Custom weighting,4,ZN-02-026,GREEN,GREEN,True
+Custom weighting,4,ZN-02-036,GREEN,GREEN,True
+Custom weighting,4,ZN-02-040,RED,RED,True
+Custom weighting,4,ZN-03-001,GREEN,GREEN,True
+Custom weighting,4,ZN-03-004,GREEN,GREEN,True
+Custom weighting,4,ZN-03-006,GREEN,GREEN,True
+Custom weighting,4,ZN-03-015,GREEN,GREEN,True
+Custom weighting,4,ZN-03-028,GREEN,GREEN,True
+Custom weighting,4,ZN-03-034,RED,RED,True
+Custom weighting,4,ZN-04-005,RED,RED,True
+Custom weighting,4,ZN-04-007,GREEN,GREEN,True
+Custom weighting,4,ZN-04-015,GREEN,GREEN,True
+Custom weighting,4,ZN-04-017,GREEN,GREEN,True
+Custom weighting,4,ZN-04-023,RED,AMBER,False
+Custom weighting,4,ZN-04-028,GREEN,GREEN,True
+Custom weighting,4,ZN-04-029,GREEN,GREEN,True
+Custom weighting,4,ZN-04-030,GREEN,GREEN,True
+Custom weighting,4,ZN-04-031,GREEN,GREEN,True
+Custom weighting,4,ZN-04-037,GREEN,GREEN,True
+Custom weighting,4,ZN-05-014,GREEN,GREEN,True
+Custom weighting,4,ZN-05-015,GREEN,GREEN,True
+Custom weighting,4,ZN-05-025,RED,RED,True
+Custom weighting,4,ZN-05-026,AMBER,GREEN,False
+Custom weighting,4,ZN-05-037,GREEN,GREEN,True
+Custom weighting,5,ZN-01-001,RED,RED,True
+Custom weighting,5,ZN-01-004,GREEN,GREEN,True
+Custom weighting,5,ZN-01-012,GREEN,GREEN,True
+Custom weighting,5,ZN-01-035,AMBER,AMBER,True
+Custom weighting,5,ZN-01-039,RED,RED,True
+Custom weighting,5,ZN-01-040,RED,AMBER,False
+Custom weighting,5,ZN-02-004,GREEN,GREEN,True
+Custom weighting,5,ZN-02-005,GREEN,GREEN,True
+Custom weighting,5,ZN-02-011,GREEN,GREEN,True
+Custom weighting,5,ZN-02-020,GREEN,GREEN,True
+Custom weighting,5,ZN-02-027,GREEN,GREEN,True
+Custom weighting,5,ZN-02-035,GREEN,GREEN,True
+Custom weighting,5,ZN-03-003,GREEN,GREEN,True
+Custom weighting,5,ZN-03-012,GREEN,GREEN,True
+Custom weighting,5,ZN-03-016,GREEN,GREEN,True
+Custom weighting,5,ZN-03-019,RED,RED,True
+Custom weighting,5,ZN-03-021,GREEN,GREEN,True
+Custom weighting,5,ZN-03-022,GREEN,GREEN,True
+Custom weighting,5,ZN-03-024,GREEN,GREEN,True
+Custom weighting,5,ZN-03-025,GREEN,GREEN,True
+Custom weighting,5,ZN-03-031,AMBER,AMBER,True
+Custom weighting,5,ZN-03-035,GREEN,GREEN,True
+Custom weighting,5,ZN-03-039,GREEN,GREEN,True
+Custom weighting,5,ZN-04-003,RED,RED,True
+Custom weighting,5,ZN-04-008,AMBER,GREEN,False
+Custom weighting,5,ZN-04-010,GREEN,GREEN,True
+Custom weighting,5,ZN-04-013,GREEN,GREEN,True
+Custom weighting,5,ZN-04-016,GREEN,GREEN,True
+Custom weighting,5,ZN-04-018,RED,RED,True
+Custom weighting,5,ZN-04-022,GREEN,GREEN,True
+Custom weighting,5,ZN-04-024,GREEN,GREEN,True
+Custom weighting,5,ZN-04-025,GREEN,GREEN,True
+Custom weighting,5,ZN-05-009,GREEN,GREEN,True
+Custom weighting,5,ZN-05-013,GREEN,GREEN,True
+Custom weighting,5,ZN-05-018,GREEN,GREEN,True
+Custom weighting,5,ZN-05-027,GREEN,GREEN,True
+Custom weighting,5,ZN-05-032,GREEN,GREEN,True
+Custom weighting,5,ZN-05-033,GREEN,GREEN,True
+Custom weighting,5,ZN-05-034,GREEN,GREEN,True
+Custom weighting,5,ZN-05-040,AMBER,AMBER,True

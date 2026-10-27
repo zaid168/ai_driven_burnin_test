@@ -1,0 +1,201 @@
+chip_id,lot_id,chip_class,failure_mode,severity,health_score,triage,failure_probability_pct,est_months_to_failure_in_orbit,note,latent_defect_flag,physical_explanation,max_I_leak_uA_168h,passes_static_10uA_limit
+ZN-01-001,LOT-01,gross,TDDB,1.0,7.0,RED,94.9,1.9,,1,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,15.65,0
+ZN-01-002,LOT-01,nominal,NONE,0.0,90.8,GREEN,10.0,,,0,No degradation signature; drift within lot peers.,1.189,1
+ZN-01-003,LOT-01,nominal,NONE,0.0,84.0,GREEN,15.7,,,0,No degradation signature; drift within lot peers.,1.116,1
+ZN-01-004,LOT-01,nominal,NONE,0.0,93.3,GREEN,3.5,,,0,No degradation signature; drift within lot peers.,1.131,1
+ZN-01-005,LOT-01,nominal,NONE,0.0,90.5,GREEN,7.1,,,0,No degradation signature; drift within lot peers.,0.991,1
+ZN-01-006,LOT-01,nominal,NONE,0.0,85.2,GREEN,15.0,,,0,No degradation signature; drift within lot peers.,1.019,1
+ZN-01-007,LOT-01,nominal,NONE,0.0,83.8,GREEN,15.3,,,0,No degradation signature; drift within lot peers.,1.085,1
+ZN-01-008,LOT-01,nominal,NONE,0.0,94.2,GREEN,3.5,,,0,No degradation signature; drift within lot peers.,1.05,1
+ZN-01-009,LOT-01,nominal,NONE,0.0,90.2,GREEN,11.7,,,0,No degradation signature; drift within lot peers.,1.078,1
+ZN-01-010,LOT-01,latent,HOT_CARRIER,1.0,26.3,RED,74.9,6.2,,1,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.123,1
+ZN-01-011,LOT-01,nominal,NONE,0.0,88.0,GREEN,10.2,,,0,No degradation signature; drift within lot peers.,1.081,1
+ZN-01-012,LOT-01,nominal,NONE,0.0,92.2,GREEN,8.5,,,0,No degradation signature; drift within lot peers.,1.118,1
+ZN-01-013,LOT-01,nominal,NONE,0.0,94.3,GREEN,4.0,,,0,No degradation signature; drift within lot peers.,1.004,1
+ZN-01-014,LOT-01,marginal,IMPURITY_DRIFT,0.394,76.3,AMBER,23.6,33.8,,0,Erratic I_DDQ spikes -> impurity migration under electric field.,1.058,1
+ZN-01-015,LOT-01,nominal,NONE,0.0,89.9,GREEN,7.8,,,0,No degradation signature; drift within lot peers.,1.039,1
+ZN-01-016,LOT-01,latent,HOT_CARRIER,1.0,30.6,RED,69.6,7.7,,1,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.571,1
+ZN-01-017,LOT-01,nominal,NONE,0.0,96.6,GREEN,2.6,,,0,No degradation signature; drift within lot peers.,0.99,1
+ZN-01-018,LOT-01,nominal,NONE,0.0,94.7,GREEN,5.8,,,0,No degradation signature; drift within lot peers.,1.032,1
+ZN-01-019,LOT-01,nominal,NONE,0.0,96.5,GREEN,4.1,,,0,No degradation signature; drift within lot peers.,1.157,1
+ZN-01-020,LOT-01,nominal,NONE,0.0,85.9,GREEN,14.3,,,0,No degradation signature; drift within lot peers.,1.079,1
+ZN-01-021,LOT-01,nominal,NONE,0.0,93.3,GREEN,5.1,,,0,No degradation signature; drift within lot peers.,1.119,1
+ZN-01-022,LOT-01,nominal,NONE,0.0,86.2,GREEN,14.6,,,0,No degradation signature; drift within lot peers.,1.084,1
+ZN-01-023,LOT-01,nominal,NONE,0.0,87.1,GREEN,12.2,,,0,No degradation signature; drift within lot peers.,1.12,1
+ZN-01-024,LOT-01,nominal,NONE,0.0,98.3,GREEN,2.9,,,0,No degradation signature; drift within lot peers.,1.161,1
+ZN-01-025,LOT-01,nominal,NONE,0.0,91.5,GREEN,9.6,,,0,No degradation signature; drift within lot peers.,1.145,1
+ZN-01-026,LOT-01,nominal,NONE,0.0,91.2,GREEN,10.7,,,0,No degradation signature; drift within lot peers.,1.066,1
+ZN-01-027,LOT-01,latent,IMPURITY_DRIFT,1.0,39.0,RED,60.7,9.4,,1,Erratic I_DDQ spikes -> impurity migration under electric field.,1.239,1
+ZN-01-028,LOT-01,nominal,NONE,0.0,94.6,GREEN,6.4,,,0,No degradation signature; drift within lot peers.,0.996,1
+ZN-01-029,LOT-01,nominal,NONE,0.0,88.8,GREEN,10.5,,,0,No degradation signature; drift within lot peers.,1.171,1
+ZN-01-030,LOT-01,nominal,NONE,0.0,98.2,GREEN,0.1,,,0,No degradation signature; drift within lot peers.,1.068,1
+ZN-01-031,LOT-01,latent,ELECTROMIGRATION,1.0,22.0,RED,74.9,6.0,,1,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",1.201,1
+ZN-01-032,LOT-01,marginal,ELECTROMIGRATION,0.442,72.3,AMBER,27.5,34.6,,0,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",1.103,1
+ZN-01-033,LOT-01,latent,ELECTROMIGRATION,1.0,23.1,RED,75.3,5.8,,1,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",0.967,1
+ZN-01-034,LOT-01,nominal,NONE,0.0,85.3,GREEN,15.2,,,0,No degradation signature; drift within lot peers.,1.29,1
+ZN-01-035,LOT-01,marginal,TDDB,0.371,64.7,AMBER,37.0,40.8,,0,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,2.942,1
+ZN-01-036,LOT-01,marginal,HOT_CARRIER,0.413,68.3,AMBER,33.5,31.4,,0,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,0.974,1
+ZN-01-037,LOT-01,nominal,NONE,0.0,92.9,GREEN,6.2,,,0,No degradation signature; drift within lot peers.,1.082,1
+ZN-01-038,LOT-01,nominal,NONE,0.0,96.1,GREEN,2.9,,,0,No degradation signature; drift within lot peers.,1.02,1
+ZN-01-039,LOT-01,latent,TDDB,1.0,25.8,RED,73.5,6.1,deck_showcase_chip_1uA_plus0.8uA_per_day,1,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,7.075,1
+ZN-01-040,LOT-01,latent,HOT_CARRIER,1.0,32.2,RED,68.4,5.2,,1,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.197,1
+ZN-02-001,LOT-02,nominal,NONE,0.0,92.4,GREEN,8.0,,,0,No degradation signature; drift within lot peers.,1.073,1
+ZN-02-002,LOT-02,nominal,NONE,0.0,95.9,GREEN,1.1,,,0,No degradation signature; drift within lot peers.,1.109,1
+ZN-02-003,LOT-02,nominal,NONE,0.0,94.2,GREEN,4.9,,,0,No degradation signature; drift within lot peers.,1.374,1
+ZN-02-004,LOT-02,nominal,NONE,0.0,87.1,GREEN,11.1,,,0,No degradation signature; drift within lot peers.,1.071,1
+ZN-02-005,LOT-02,nominal,NONE,0.0,91.5,GREEN,11.1,,,0,No degradation signature; drift within lot peers.,1.133,1
+ZN-02-006,LOT-02,nominal,NONE,0.0,85.6,GREEN,11.8,,,0,No degradation signature; drift within lot peers.,1.27,1
+ZN-02-007,LOT-02,nominal,NONE,0.0,82.4,GREEN,16.1,,,0,No degradation signature; drift within lot peers.,1.067,1
+ZN-02-008,LOT-02,nominal,NONE,0.0,87.8,GREEN,9.5,,,0,No degradation signature; drift within lot peers.,1.148,1
+ZN-02-009,LOT-02,latent,ELECTROMIGRATION,1.0,36.9,RED,63.1,6.1,,1,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",1.067,1
+ZN-02-010,LOT-02,nominal,NONE,0.0,90.5,GREEN,9.4,,,0,No degradation signature; drift within lot peers.,1.185,1
+ZN-02-011,LOT-02,nominal,NONE,0.0,90.3,GREEN,11.7,,,0,No degradation signature; drift within lot peers.,0.968,1
+ZN-02-012,LOT-02,nominal,NONE,0.0,97.6,GREEN,0.1,,,0,No degradation signature; drift within lot peers.,1.156,1
+ZN-02-013,LOT-02,nominal,NONE,0.0,94.9,GREEN,3.7,,,0,No degradation signature; drift within lot peers.,1.237,1
+ZN-02-014,LOT-02,nominal,NONE,0.0,92.0,GREEN,5.6,,,0,No degradation signature; drift within lot peers.,1.187,1
+ZN-02-015,LOT-02,marginal,HOT_CARRIER,0.48,77.8,AMBER,23.3,46.7,,0,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.353,1
+ZN-02-016,LOT-02,marginal,IMPURITY_DRIFT,0.3,72.9,AMBER,27.8,17.4,,0,Erratic I_DDQ spikes -> impurity migration under electric field.,1.029,1
+ZN-02-017,LOT-02,nominal,NONE,0.0,94.2,GREEN,7.3,,,0,No degradation signature; drift within lot peers.,1.25,1
+ZN-02-018,LOT-02,nominal,NONE,0.0,87.2,GREEN,11.7,,,0,No degradation signature; drift within lot peers.,1.309,1
+ZN-02-019,LOT-02,nominal,NONE,0.0,88.7,GREEN,10.7,,,0,No degradation signature; drift within lot peers.,0.922,1
+ZN-02-020,LOT-02,nominal,NONE,0.0,94.6,GREEN,6.9,,,0,No degradation signature; drift within lot peers.,1.226,1
+ZN-02-021,LOT-02,latent,IMPURITY_DRIFT,1.0,31.8,RED,68.7,7.1,,1,Erratic I_DDQ spikes -> impurity migration under electric field.,1.082,1
+ZN-02-022,LOT-02,latent,ELECTROMIGRATION,1.0,37.4,RED,64.5,6.1,,1,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",1.122,1
+ZN-02-023,LOT-02,latent,ELECTROMIGRATION,1.0,39.3,RED,61.6,9.5,,1,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",1.292,1
+ZN-02-024,LOT-02,nominal,NONE,0.0,88.9,GREEN,11.3,,,0,No degradation signature; drift within lot peers.,1.134,1
+ZN-02-025,LOT-02,latent,TDDB,1.0,19.8,RED,78.7,5.2,,1,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,5.27,1
+ZN-02-026,LOT-02,nominal,NONE,0.0,92.3,GREEN,4.3,,,0,No degradation signature; drift within lot peers.,0.87,1
+ZN-02-027,LOT-02,nominal,NONE,0.0,87.5,GREEN,13.8,,,0,No degradation signature; drift within lot peers.,1.203,1
+ZN-02-028,LOT-02,nominal,NONE,0.0,92.4,GREEN,7.1,,,0,No degradation signature; drift within lot peers.,1.363,1
+ZN-02-029,LOT-02,nominal,NONE,0.0,89.1,GREEN,12.8,,,0,No degradation signature; drift within lot peers.,1.181,1
+ZN-02-030,LOT-02,nominal,NONE,0.0,82.7,GREEN,17.3,,,0,No degradation signature; drift within lot peers.,1.082,1
+ZN-02-031,LOT-02,nominal,NONE,0.0,94.6,GREEN,5.5,,,0,No degradation signature; drift within lot peers.,1.306,1
+ZN-02-032,LOT-02,nominal,NONE,0.0,96.8,GREEN,4.6,,,0,No degradation signature; drift within lot peers.,1.255,1
+ZN-02-033,LOT-02,nominal,NONE,0.0,88.3,GREEN,13.3,,,0,No degradation signature; drift within lot peers.,1.173,1
+ZN-02-034,LOT-02,latent,IMPURITY_DRIFT,1.0,45.9,RED,53.3,8.3,,1,Erratic I_DDQ spikes -> impurity migration under electric field.,1.118,1
+ZN-02-035,LOT-02,nominal,NONE,0.0,83.5,GREEN,16.4,,,0,No degradation signature; drift within lot peers.,1.087,1
+ZN-02-036,LOT-02,nominal,NONE,0.0,94.5,GREEN,4.8,,,0,No degradation signature; drift within lot peers.,1.225,1
+ZN-02-037,LOT-02,nominal,NONE,0.0,92.4,GREEN,9.2,,,0,No degradation signature; drift within lot peers.,1.309,1
+ZN-02-038,LOT-02,nominal,NONE,0.0,85.3,GREEN,14.7,,,0,No degradation signature; drift within lot peers.,1.177,1
+ZN-02-039,LOT-02,latent,ELECTROMIGRATION,1.0,33.7,RED,65.4,9.0,,1,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",1.222,1
+ZN-02-040,LOT-02,latent,TDDB,1.0,23.1,RED,75.4,7.6,,1,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,6.2,1
+ZN-03-001,LOT-03,nominal,NONE,0.0,92.8,GREEN,5.6,,,0,No degradation signature; drift within lot peers.,1.193,1
+ZN-03-002,LOT-03,nominal,NONE,0.0,92.1,GREEN,8.1,,,0,No degradation signature; drift within lot peers.,1.002,1
+ZN-03-003,LOT-03,nominal,NONE,0.0,90.2,GREEN,7.9,,,0,No degradation signature; drift within lot peers.,0.999,1
+ZN-03-004,LOT-03,nominal,NONE,0.0,96.1,GREEN,4.9,,,0,No degradation signature; drift within lot peers.,1.074,1
+ZN-03-005,LOT-03,nominal,NONE,0.0,96.4,GREEN,5.4,,,0,No degradation signature; drift within lot peers.,1.246,1
+ZN-03-006,LOT-03,nominal,NONE,0.0,84.1,GREEN,16.9,,,0,No degradation signature; drift within lot peers.,1.181,1
+ZN-03-007,LOT-03,nominal,NONE,0.0,82.9,GREEN,16.5,,,0,No degradation signature; drift within lot peers.,0.94,1
+ZN-03-008,LOT-03,nominal,NONE,0.0,86.1,GREEN,15.0,,,0,No degradation signature; drift within lot peers.,0.947,1
+ZN-03-009,LOT-03,latent,TDDB,1.0,32.3,RED,66.2,7.3,,1,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,7.197,1
+ZN-03-010,LOT-03,marginal,IMPURITY_DRIFT,0.389,58.9,AMBER,41.0,19.4,,0,Erratic I_DDQ spikes -> impurity migration under electric field.,1.229,1
+ZN-03-011,LOT-03,nominal,NONE,0.0,91.6,GREEN,9.4,,,0,No degradation signature; drift within lot peers.,0.934,1
+ZN-03-012,LOT-03,nominal,NONE,0.0,85.2,GREEN,15.7,,,0,No degradation signature; drift within lot peers.,1.107,1
+ZN-03-013,LOT-03,nominal,NONE,0.0,93.9,GREEN,6.3,,,0,No degradation signature; drift within lot peers.,0.937,1
+ZN-03-014,LOT-03,nominal,NONE,0.0,87.8,GREEN,13.2,,,0,No degradation signature; drift within lot peers.,1.075,1
+ZN-03-015,LOT-03,nominal,NONE,0.0,90.4,GREEN,11.6,,,0,No degradation signature; drift within lot peers.,1.066,1
+ZN-03-016,LOT-03,nominal,NONE,0.0,92.4,GREEN,4.6,,,0,No degradation signature; drift within lot peers.,1.097,1
+ZN-03-017,LOT-03,nominal,NONE,0.0,98.9,GREEN,2.0,,,0,No degradation signature; drift within lot peers.,1.198,1
+ZN-03-018,LOT-03,latent,TDDB,1.0,27.3,RED,75.2,6.0,,1,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,7.691,1
+ZN-03-019,LOT-03,gross,TDDB,1.0,14.2,RED,87.3,2.2,,1,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,18.332,0
+ZN-03-020,LOT-03,nominal,NONE,0.0,83.6,GREEN,17.3,,,0,No degradation signature; drift within lot peers.,1.017,1
+ZN-03-021,LOT-03,nominal,NONE,0.0,92.6,GREEN,6.8,,,0,No degradation signature; drift within lot peers.,0.969,1
+ZN-03-022,LOT-03,nominal,NONE,0.0,86.2,GREEN,12.9,,,0,No degradation signature; drift within lot peers.,1.145,1
+ZN-03-023,LOT-03,nominal,NONE,0.0,90.3,GREEN,8.1,,,0,No degradation signature; drift within lot peers.,1.058,1
+ZN-03-024,LOT-03,nominal,NONE,0.0,96.2,GREEN,5.0,,,0,No degradation signature; drift within lot peers.,1.052,1
+ZN-03-025,LOT-03,nominal,NONE,0.0,97.9,GREEN,4.8,,,0,No degradation signature; drift within lot peers.,1.095,1
+ZN-03-026,LOT-03,nominal,NONE,0.0,94.9,GREEN,1.6,,,0,No degradation signature; drift within lot peers.,1.179,1
+ZN-03-027,LOT-03,nominal,NONE,0.0,91.9,GREEN,8.8,,,0,No degradation signature; drift within lot peers.,1.106,1
+ZN-03-028,LOT-03,nominal,NONE,0.0,98.4,GREEN,0.3,,,0,No degradation signature; drift within lot peers.,1.21,1
+ZN-03-029,LOT-03,marginal,ELECTROMIGRATION,0.449,69.3,AMBER,30.3,16.7,,0,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",1.138,1
+ZN-03-030,LOT-03,nominal,NONE,0.0,92.7,GREEN,7.6,,,0,No degradation signature; drift within lot peers.,0.98,1
+ZN-03-031,LOT-03,marginal,ELECTROMIGRATION,0.314,76.7,AMBER,24.5,38.8,,0,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",1.222,1
+ZN-03-032,LOT-03,nominal,NONE,0.0,83.3,GREEN,19.9,,,0,No degradation signature; drift within lot peers.,0.914,1
+ZN-03-033,LOT-03,latent,HOT_CARRIER,1.0,28.5,RED,73.3,8.9,,1,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.186,1
+ZN-03-034,LOT-03,latent,ELECTROMIGRATION,1.0,18.2,RED,84.6,5.4,,1,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",1.193,1
+ZN-03-035,LOT-03,nominal,NONE,0.0,94.3,GREEN,4.8,,,0,No degradation signature; drift within lot peers.,1.316,1
+ZN-03-036,LOT-03,nominal,NONE,0.0,93.4,GREEN,6.1,,,0,No degradation signature; drift within lot peers.,1.156,1
+ZN-03-037,LOT-03,nominal,NONE,0.0,88.7,GREEN,10.9,,,0,No degradation signature; drift within lot peers.,1.066,1
+ZN-03-038,LOT-03,marginal,TDDB,0.455,62.0,AMBER,37.9,24.5,,0,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,4.069,1
+ZN-03-039,LOT-03,nominal,NONE,0.0,90.6,GREEN,10.3,,,0,No degradation signature; drift within lot peers.,1.223,1
+ZN-03-040,LOT-03,nominal,NONE,0.0,85.9,GREEN,13.5,,,0,No degradation signature; drift within lot peers.,1.026,1
+ZN-04-001,LOT-04,marginal,TDDB,0.361,66.0,AMBER,34.5,32.6,,0,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,4.113,1
+ZN-04-002,LOT-04,nominal,NONE,0.0,98.7,GREEN,0.1,,,0,No degradation signature; drift within lot peers.,1.511,1
+ZN-04-003,LOT-04,gross,HOT_CARRIER,1.0,7.5,RED,91.3,0.9,,1,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.411,1
+ZN-04-004,LOT-04,nominal,NONE,0.0,87.8,GREEN,12.7,,,0,No degradation signature; drift within lot peers.,1.485,1
+ZN-04-005,LOT-04,latent,IMPURITY_DRIFT,1.0,25.7,RED,76.6,5.4,,1,Erratic I_DDQ spikes -> impurity migration under electric field.,1.685,1
+ZN-04-006,LOT-04,nominal,NONE,0.0,86.6,GREEN,13.9,,,0,No degradation signature; drift within lot peers.,1.34,1
+ZN-04-007,LOT-04,nominal,NONE,0.0,84.2,GREEN,15.8,,,0,No degradation signature; drift within lot peers.,1.685,1
+ZN-04-008,LOT-04,marginal,HOT_CARRIER,0.459,72.7,AMBER,25.5,41.8,,0,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.561,1
+ZN-04-009,LOT-04,nominal,NONE,0.0,92.5,GREEN,8.1,,,0,No degradation signature; drift within lot peers.,1.365,1
+ZN-04-010,LOT-04,nominal,NONE,0.0,96.8,GREEN,4.3,,,0,No degradation signature; drift within lot peers.,1.601,1
+ZN-04-011,LOT-04,marginal,TDDB,0.337,63.7,AMBER,35.4,34.4,,0,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,3.312,1
+ZN-04-012,LOT-04,nominal,NONE,0.0,88.2,GREEN,10.1,,,0,No degradation signature; drift within lot peers.,1.631,1
+ZN-04-013,LOT-04,nominal,NONE,0.0,89.6,GREEN,9.9,,,0,No degradation signature; drift within lot peers.,1.454,1
+ZN-04-014,LOT-04,nominal,NONE,0.0,87.0,GREEN,13.7,,,0,No degradation signature; drift within lot peers.,1.597,1
+ZN-04-015,LOT-04,nominal,NONE,0.0,98.0,GREEN,3.9,,,0,No degradation signature; drift within lot peers.,1.705,1
+ZN-04-016,LOT-04,nominal,NONE,0.0,97.4,GREEN,1.3,,,0,No degradation signature; drift within lot peers.,1.463,1
+ZN-04-017,LOT-04,nominal,NONE,0.0,86.8,GREEN,11.7,,,0,No degradation signature; drift within lot peers.,1.434,1
+ZN-04-018,LOT-04,gross,IMPURITY_DRIFT,1.0,9.4,RED,90.4,0.9,,1,Erratic I_DDQ spikes -> impurity migration under electric field.,1.654,1
+ZN-04-019,LOT-04,nominal,NONE,0.0,89.0,GREEN,12.4,,,0,No degradation signature; drift within lot peers.,1.514,1
+ZN-04-020,LOT-04,nominal,NONE,0.0,88.3,GREEN,9.2,,,0,No degradation signature; drift within lot peers.,1.717,1
+ZN-04-021,LOT-04,nominal,NONE,0.0,87.9,GREEN,12.2,,,0,No degradation signature; drift within lot peers.,1.359,1
+ZN-04-022,LOT-04,nominal,NONE,0.0,92.4,GREEN,8.5,,,0,No degradation signature; drift within lot peers.,1.773,1
+ZN-04-023,LOT-04,latent,HOT_CARRIER,1.0,25.2,RED,73.8,5.9,,1,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.504,1
+ZN-04-024,LOT-04,nominal,NONE,0.0,85.9,GREEN,12.7,,,0,No degradation signature; drift within lot peers.,1.733,1
+ZN-04-025,LOT-04,nominal,NONE,0.0,96.7,GREEN,3.8,,,0,No degradation signature; drift within lot peers.,1.493,1
+ZN-04-026,LOT-04,latent,IMPURITY_DRIFT,1.0,30.1,RED,70.6,5.1,,1,Erratic I_DDQ spikes -> impurity migration under electric field.,1.324,1
+ZN-04-027,LOT-04,nominal,NONE,0.0,93.7,GREEN,5.5,,,0,No degradation signature; drift within lot peers.,1.679,1
+ZN-04-028,LOT-04,nominal,NONE,0.0,93.3,GREEN,4.6,,,0,No degradation signature; drift within lot peers.,1.339,1
+ZN-04-029,LOT-04,nominal,NONE,0.0,94.5,GREEN,4.4,,,0,No degradation signature; drift within lot peers.,1.57,1
+ZN-04-030,LOT-04,nominal,NONE,0.0,92.6,GREEN,6.0,,,0,No degradation signature; drift within lot peers.,1.749,1
+ZN-04-031,LOT-04,nominal,NONE,0.0,92.1,GREEN,8.9,,,0,No degradation signature; drift within lot peers.,1.446,1
+ZN-04-032,LOT-04,nominal,NONE,0.0,97.0,GREEN,2.6,,,0,No degradation signature; drift within lot peers.,1.358,1
+ZN-04-033,LOT-04,nominal,NONE,0.0,95.4,GREEN,4.0,,,0,No degradation signature; drift within lot peers.,1.623,1
+ZN-04-034,LOT-04,marginal,TDDB,0.459,61.9,AMBER,40.2,36.9,,0,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,4.234,1
+ZN-04-035,LOT-04,nominal,NONE,0.0,92.8,GREEN,5.0,,,0,No degradation signature; drift within lot peers.,1.7,1
+ZN-04-036,LOT-04,nominal,NONE,0.0,91.8,GREEN,7.2,,,0,No degradation signature; drift within lot peers.,1.476,1
+ZN-04-037,LOT-04,nominal,NONE,0.0,84.9,GREEN,13.6,,,0,No degradation signature; drift within lot peers.,1.53,1
+ZN-04-038,LOT-04,nominal,NONE,0.0,95.5,GREEN,5.5,,,0,No degradation signature; drift within lot peers.,1.517,1
+ZN-04-039,LOT-04,nominal,NONE,0.0,96.9,GREEN,3.3,,,0,No degradation signature; drift within lot peers.,1.516,1
+ZN-04-040,LOT-04,nominal,NONE,0.0,89.2,GREEN,12.4,,,0,No degradation signature; drift within lot peers.,1.545,1
+ZN-05-001,LOT-05,latent,HOT_CARRIER,1.0,35.4,RED,65.6,5.5,,1,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.193,1
+ZN-05-002,LOT-05,nominal,NONE,0.0,98.0,GREEN,0.6,,,0,No degradation signature; drift within lot peers.,1.364,1
+ZN-05-003,LOT-05,marginal,HOT_CARRIER,0.308,76.7,AMBER,24.0,30.3,,0,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.241,1
+ZN-05-004,LOT-05,nominal,NONE,0.0,89.5,GREEN,9.6,,,0,No degradation signature; drift within lot peers.,1.369,1
+ZN-05-005,LOT-05,latent,IMPURITY_DRIFT,1.0,33.5,RED,66.6,5.7,,1,Erratic I_DDQ spikes -> impurity migration under electric field.,1.345,1
+ZN-05-006,LOT-05,nominal,NONE,0.0,98.0,GREEN,2.0,,,0,No degradation signature; drift within lot peers.,1.296,1
+ZN-05-007,LOT-05,marginal,HOT_CARRIER,0.427,56.2,AMBER,42.8,25.3,,0,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.25,1
+ZN-05-008,LOT-05,nominal,NONE,0.0,86.3,GREEN,14.5,,,0,No degradation signature; drift within lot peers.,1.248,1
+ZN-05-009,LOT-05,nominal,NONE,0.0,90.7,GREEN,8.7,,,0,No degradation signature; drift within lot peers.,1.196,1
+ZN-05-010,LOT-05,nominal,NONE,0.0,95.3,GREEN,6.1,,,0,No degradation signature; drift within lot peers.,1.211,1
+ZN-05-011,LOT-05,marginal,ELECTROMIGRATION,0.416,76.4,AMBER,19.7,25.6,,0,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",1.276,1
+ZN-05-012,LOT-05,nominal,NONE,0.0,83.7,GREEN,18.5,,,0,No degradation signature; drift within lot peers.,1.315,1
+ZN-05-013,LOT-05,nominal,NONE,0.0,82.5,GREEN,15.9,,,0,No degradation signature; drift within lot peers.,1.389,1
+ZN-05-014,LOT-05,nominal,NONE,0.0,93.3,GREEN,6.0,,,0,No degradation signature; drift within lot peers.,1.346,1
+ZN-05-015,LOT-05,nominal,NONE,0.0,97.7,GREEN,0.1,,,0,No degradation signature; drift within lot peers.,1.491,1
+ZN-05-016,LOT-05,nominal,NONE,0.0,82.4,GREEN,18.5,,,0,No degradation signature; drift within lot peers.,1.208,1
+ZN-05-017,LOT-05,marginal,IMPURITY_DRIFT,0.32,69.4,AMBER,29.5,27.4,,0,Erratic I_DDQ spikes -> impurity migration under electric field.,1.109,1
+ZN-05-018,LOT-05,nominal,NONE,0.0,82.8,GREEN,17.9,,,0,No degradation signature; drift within lot peers.,0.967,1
+ZN-05-019,LOT-05,nominal,NONE,0.0,90.9,GREEN,7.2,,,0,No degradation signature; drift within lot peers.,1.263,1
+ZN-05-020,LOT-05,nominal,NONE,0.0,83.6,GREEN,17.9,,,0,No degradation signature; drift within lot peers.,1.202,1
+ZN-05-021,LOT-05,nominal,NONE,0.0,98.1,GREEN,3.3,,,0,No degradation signature; drift within lot peers.,1.197,1
+ZN-05-022,LOT-05,nominal,NONE,0.0,83.5,GREEN,15.3,,,0,No degradation signature; drift within lot peers.,1.193,1
+ZN-05-023,LOT-05,nominal,NONE,0.0,94.8,GREEN,6.9,,,0,No degradation signature; drift within lot peers.,1.336,1
+ZN-05-024,LOT-05,nominal,NONE,0.0,92.5,GREEN,5.9,,,0,No degradation signature; drift within lot peers.,1.331,1
+ZN-05-025,LOT-05,latent,TDDB,1.0,27.5,RED,71.0,4.9,,1,Rising leakage current -> gate-oxide breakdown (TDDB) percolation pinholes.,7.395,1
+ZN-05-026,LOT-05,marginal,ELECTROMIGRATION,0.411,66.7,AMBER,33.8,19.9,,0,"Propagation delay creeping up -> electromigration wire thinning, rising resistance.",1.223,1
+ZN-05-027,LOT-05,nominal,NONE,0.0,90.7,GREEN,10.6,,,0,No degradation signature; drift within lot peers.,1.388,1
+ZN-05-028,LOT-05,nominal,NONE,0.0,86.0,GREEN,15.1,,,0,No degradation signature; drift within lot peers.,1.185,1
+ZN-05-029,LOT-05,nominal,NONE,0.0,92.0,GREEN,8.3,,,0,No degradation signature; drift within lot peers.,1.201,1
+ZN-05-030,LOT-05,latent,HOT_CARRIER,1.0,34.6,RED,67.9,7.4,,1,Threshold voltage shift + slower switching -> hot-carrier trapping at gate boundary.,1.342,1
+ZN-05-031,LOT-05,nominal,NONE,0.0,95.0,GREEN,5.4,,,0,No degradation signature; drift within lot peers.,0.989,1
+ZN-05-032,LOT-05,nominal,NONE,0.0,92.7,GREEN,8.3,,,0,No degradation signature; drift within lot peers.,1.2,1
+ZN-05-033,LOT-05,nominal,NONE,0.0,97.0,GREEN,1.9,,,0,No degradation signature; drift within lot peers.,1.389,1
+ZN-05-034,LOT-05,nominal,NONE,0.0,89.8,GREEN,10.4,,,0,No degradation signature; drift within lot peers.,1.312,1
+ZN-05-035,LOT-05,nominal,NONE,0.0,98.2,GREEN,1.0,,,0,No degradation signature; drift within lot peers.,1.27,1
+ZN-05-036,LOT-05,nominal,NONE,0.0,82.1,GREEN,16.1,,,0,No degradation signature; drift within lot peers.,1.224,1
+ZN-05-037,LOT-05,nominal,NONE,0.0,95.6,GREEN,6.3,,,0,No degradation signature; drift within lot peers.,1.195,1
+ZN-05-038,LOT-05,nominal,NONE,0.0,92.8,GREEN,8.9,,,0,No degradation signature; drift within lot peers.,1.039,1
+ZN-05-039,LOT-05,nominal,NONE,0.0,98.6,GREEN,1.6,,,0,No degradation signature; drift within lot peers.,1.569,1
+ZN-05-040,LOT-05,marginal,IMPURITY_DRIFT,0.344,57.3,AMBER,44.1,34.3,,0,Erratic I_DDQ spikes -> impurity migration under electric field.,1.386,1

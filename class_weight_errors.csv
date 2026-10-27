@@ -1,0 +1,27 @@
+strategy,fold,chip_id,actual,predicted,correct
+Balanced,3,ZN-01-027,RED,AMBER,False
+Balanced,3,ZN-02-016,AMBER,GREEN,False
+Balanced,3,ZN-05-017,AMBER,GREEN,False
+Balanced,4,ZN-01-032,AMBER,GREEN,False
+Balanced,4,ZN-01-036,AMBER,GREEN,False
+Balanced,4,ZN-04-023,RED,AMBER,False
+Balanced,5,ZN-01-035,AMBER,GREEN,False
+Balanced,5,ZN-01-040,RED,AMBER,False
+Balanced,5,ZN-04-008,AMBER,GREEN,False
+No class weighting,1,ZN-03-010,AMBER,GREEN,False
+No class weighting,3,ZN-01-027,RED,AMBER,False
+No class weighting,3,ZN-02-034,RED,AMBER,False
+No class weighting,3,ZN-05-017,AMBER,GREEN,False
+No class weighting,4,ZN-01-032,AMBER,GREEN,False
+No class weighting,4,ZN-04-023,RED,AMBER,False
+No class weighting,5,ZN-01-035,AMBER,RED,False
+No class weighting,5,ZN-01-040,RED,AMBER,False
+No class weighting,5,ZN-04-008,AMBER,GREEN,False
+Custom weighting,3,ZN-01-027,RED,AMBER,False
+Custom weighting,3,ZN-02-034,RED,AMBER,False
+Custom weighting,3,ZN-05-017,AMBER,GREEN,False
+Custom weighting,4,ZN-01-032,AMBER,GREEN,False
+Custom weighting,4,ZN-04-023,RED,AMBER,False
+Custom weighting,4,ZN-05-026,AMBER,GREEN,False
+Custom weighting,5,ZN-01-040,RED,AMBER,False
+Custom weighting,5,ZN-04-008,AMBER,GREEN,False
