@@ -1,64 +1,74 @@
-# Zenith — AI-Driven Burn-in Testing
+# 🔬 Zenith — AI-Driven Semiconductor Burn-in Testing
 
-An AI-driven semiconductor burn-in analytics prototype that combines supervised machine learning and unsupervised anomaly detection to assess chip risk from burn-in telemetry.
+**Machine Learning · Anomaly Detection · Telemetry Analytics**
+
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python\&logoColor=white)](https://www.python.org/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Machine%20Learning-orange?logo=scikitlearn\&logoColor=white)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit\&logoColor=white)](https://streamlit.io/)
+[![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker\&logoColor=white)](https://www.docker.com/)
+
+An AI-driven semiconductor burn-in analytics prototype that combines supervised classification and unsupervised anomaly detection to assess chip risk from burn-in telemetry.
+
+---
 
 ## Overview
 
-Traditional burn-in testing evaluates semiconductor reliability by operating chips under controlled stress conditions and monitoring their behaviour.
+Traditional semiconductor burn-in testing evaluates chip reliability by operating devices under controlled stress conditions while monitoring their behaviour.
 
-Zenith explores how machine learning can assist this process by analysing telemetry, extracting useful features, classifying chip risk, and identifying unusual behaviour that may warrant further investigation.
+Zenith explores how machine learning can support this process by analysing telemetry, extracting meaningful features, classifying chip risk, and identifying unusual behaviour that may require further investigation.
 
-The project combines a Random Forest classifier with an Isolation Forest anomaly detector and presents the results through an interactive Streamlit dashboard.
+The system combines a **Random Forest classifier** and an **Isolation Forest anomaly detector**, with an interactive Streamlit dashboard for exploring predictions and model performance.
 
-> **Project status:** Research and development prototype using a synthetic burn-in dataset. The results do not establish real-world semiconductor reliability or production readiness.
+> **Project status:** Research and development prototype using a synthetic dataset. Its results do not establish real-world semiconductor reliability or production readiness.
 
 ## Key Features
 
-* **Feature engineering:** Converts time-series telemetry into chip-level features.
-* **Supervised classification:** Predicts chip risk categories using a trained Random Forest model.
-* **Anomaly detection:** Uses Isolation Forest to identify unusual telemetry patterns.
-* **Risk-based recommendations:** Produces candidate actions such as `PASS_CANDIDATE`, `REVIEW`, and `REJECT_CANDIDATE`.
-* **Model evaluation:** Includes classification metrics, cross-validation, feature-importance analysis, and error investigation.
-* **Interactive dashboard:** Explores chip telemetry, predictions, model performance, and feature behaviour.
-* **Docker support:** Packages the application and its dependencies for a reproducible runtime environment.
+* **Telemetry analysis:** Processes time-series burn-in data for individual chips.
+* **Feature engineering:** Extracts chip-level features from telemetry measurements.
+* **Risk classification:** Predicts GREEN, AMBER, and RED chip categories using Random Forest.
+* **Anomaly detection:** Uses Isolation Forest to identify unusual chip behaviour.
+* **Candidate recommendations:** Generates PASS_CANDIDATE, REVIEW, and REJECT_CANDIDATE recommendations.
+* **Model evaluation:** Includes classification metrics, cross-validation, feature-importance analysis, and prediction-error investigation.
+* **Interactive dashboard:** Explores telemetry features, individual chips, predictions, and model evaluation.
+* **Docker support:** Runs the application in a containerized environment.
 
 ## System Architecture
 
-text
-Burn-in Telemetry + Chip Labels
-               |
-               v
-       Data Processing
-               |
-               v
-        Feature Engineering
-               |
-               v
-        Chip-Level Features
-               |
-        +------+------+
-        |             |
-        v             v
- Random Forest   Isolation Forest
- Classifier      Anomaly Detector
-        |             |
-        +------+------+
-               |
-               v
-       Risk and Anomaly Results
-               |
-               v
-      Candidate Recommendations
-               |
-        +------+------+
-        |             |
-        v             v
-   CSV Predictions  Streamlit Dashboard
-
+```text
+          Burn-in Telemetry + Chip Labels
+                         |
+                         v
+                  Data Processing
+                         |
+                         v
+                 Feature Engineering
+                         |
+                         v
+                 Chip-Level Features
+                         |
+                +--------+--------+
+                |                 |
+                v                 v
+          Random Forest     Isolation Forest
+           Classifier       Anomaly Detector
+                |                 |
+                +--------+--------+
+                         |
+                         v
+               Risk and Anomaly Results
+                         |
+                         v
+               Candidate Recommendations
+                         |
+                +--------+--------+
+                |                 |
+                v                 v
+          CSV Predictions    Streamlit Dashboard
+```
 
 ## Project Structure
 
-text
+```text
 ai_driven_burnin_test/
 ├── app/
 │   └── dashboard.py
@@ -79,6 +89,7 @@ ai_driven_burnin_test/
 │   ├── combined_analysis.py
 │   ├── temporal_analysis.py
 │   ├── investigate_errors.py
+│   ├── investigate_errors.py
 │   ├── validate_predictions.py
 │   ├── test_pipeline.py
 │   ├── anazlyze_errors.py
@@ -94,59 +105,67 @@ ai_driven_burnin_test/
 ├── .dockerignore
 ├── .gitignore
 └── README.md
+```
 
-
-The repository also contains supporting analysis scripts, evaluation outputs, CSV reports, and plots. The tree above highlights the main application components rather than every generated artifact.
+The repository also contains supporting analysis scripts, evaluation outputs, CSV reports, and visualization files that are not all listed in the tree above.
 
 ## Dataset
 
-The project uses two CSV files:
+The project uses two CSV files.
 
-| File                          | Purpose                                                       |
+| File                          | Description                                                   |
 | ----------------------------- | ------------------------------------------------------------- |
 | `zenith_burnin_telemetry.csv` | Time-series burn-in telemetry for individual chips            |
 | `zenith_chip_labels.csv`      | Chip-level labels used for supervised learning and evaluation |
 
-The synthetic dataset contains 33,800 telemetry records representing 200 chips.
+The synthetic dataset contains **33,800 telemetry records representing 200 chips**.
 
-The chip-label distribution is:
+### Risk Category Distribution
 
-| Risk category | Number of chips |
+| Risk Category | Number of Chips |
 | ------------- | --------------: |
 | GREEN         |             150 |
 | AMBER         |              20 |
 | RED           |              30 |
 | **Total**     |         **200** |
 
-The telemetry is aggregated into chip-level features before being passed to the models.
+The telemetry is transformed into chip-level features before being passed to the machine-learning models.
 
 ## Machine Learning Approach
 
 ### 1. Feature Engineering
 
-The feature-engineering pipeline transforms telemetry into chip-level features, including temporal changes and measurements of chip behaviour over the burn-in period.
+The feature-engineering pipeline transforms raw telemetry into chip-level features.
 
-The resulting feature matrix contains 200 chip-level rows and 54 columns, including the chip identifier.
+Features include measurements and temporal indicators that describe chip behaviour over the burn-in period.
+
+The resulting feature matrix contains **200 chip-level rows and 54 columns**, including the chip identifier.
 
 ### 2. Supervised Classification — Random Forest
 
-The Random Forest classifier predicts one of three risk categories:
+A Random Forest classifier predicts one of three risk categories:
 
 * `GREEN`
 * `AMBER`
 * `RED`
 
-The model uses class weighting to account for differences in the number of examples in each category.
+The model uses class weighting to account for differences in the number of samples in each category.
+
+The classification output provides a risk category for each chip based on its engineered features.
 
 ### 3. Unsupervised Anomaly Detection — Isolation Forest
 
-Isolation Forest identifies chips with unusual feature patterns.
+Isolation Forest identifies observations with unusual feature patterns.
 
-An anomaly is an observation that differs from the patterns learned by the model. An anomaly is not automatically proof that a chip is defective.
+Unlike the supervised classifier, the anomaly detector identifies unusual behaviour rather than predicting a known risk category.
+
+An anomaly does not automatically indicate a defective chip. It identifies a chip that may warrant additional investigation.
+
+The detector's configured contamination parameter controls its expected anomaly proportion; it should not be interpreted as the actual semiconductor defect rate.
 
 ### 4. Candidate Recommendations
 
-The inference pipeline combines classification and anomaly results to generate candidate recommendations:
+The inference pipeline combines classification and anomaly-detection results to produce candidate recommendations.
 
 | Condition                                | Recommendation     |
 | ---------------------------------------- | ------------------ |
@@ -154,42 +173,54 @@ The inference pipeline combines classification and anomaly results to generate c
 | AMBER classification or detected anomaly | `REVIEW`           |
 | Otherwise                                | `PASS_CANDIDATE`   |
 
-These are prototype recommendations, not validated manufacturing decisions. Real deployment would require engineering review, representative production data, and validation against established test procedures.
+These recommendations are intended for prototype analysis. They are not validated manufacturing decisions and should not replace established testing procedures or engineering review.
 
 ## Model Evaluation
 
-The current Random Forest holdout evaluation produced the following results:
+The current Random Forest holdout evaluation produced the following results.
+
+### Holdout Performance
 
 | Metric            | Result |
 | ----------------- | -----: |
 | Accuracy          |  97.0% |
-| Balanced accuracy | 91.67% |
+| Balanced Accuracy | 91.67% |
 | GREEN F1-score    |   0.98 |
 | AMBER F1-score    |   0.86 |
 | RED F1-score      |   1.00 |
 
-Five-fold cross-validation produced:
+### Five-Fold Cross-Validation
 
-| Metric            |  Mean | Standard deviation |
+| Metric            |  Mean | Standard Deviation |
 | ----------------- | ----: | -----------------: |
 | Accuracy          | 0.955 |              0.037 |
-| Balanced accuracy | 0.867 |              0.109 |
+| Balanced Accuracy | 0.867 |              0.109 |
 | Macro F1-score    | 0.890 |              0.090 |
 
-These results are specific to the current synthetic dataset and experimental setup. They should not be interpreted as expected performance on real semiconductor manufacturing data.
+The repository also contains scripts and artifacts for:
 
-The repository also includes scripts and artifacts for model comparison, feature importance, cross-validation, and prediction-error analysis.
+* Model comparison
+* Class-weight experiments
+* Feature-importance analysis
+* Cross-validation
+* Misclassified-chip investigation
+* Prediction-error analysis
+* Temporal feature analysis
+
+> **Important limitation:** These metrics were obtained using the current synthetic dataset and experimental setup. They should not be interpreted as expected performance on real semiconductor manufacturing data. Independent validation on representative data is necessary before drawing conclusions about real-world reliability.
 
 ## Streamlit Dashboard
 
-The dashboard provides interactive views for:
+Zenith includes an interactive dashboard built with Streamlit.
 
-* Overview
-* Feature Analysis
-* Chip Explorer
-* Model Predictions
-* Model Evaluation
-* Cross-Validation Results
+The dashboard provides the following views:
+
+* **Overview:** Summary of the dataset and analysis.
+* **Feature Analysis:** Exploration of engineered features.
+* **Chip Explorer:** Inspection of individual chips and their features.
+* **Model Predictions:** Exploration of predicted risk categories and candidate recommendations.
+* **Model Evaluation:** Review of classification performance.
+* **Cross-Validation Results:** Examination of cross-validation metrics.
 
 ## Getting Started
 
@@ -201,77 +232,114 @@ The dashboard provides interactive views for:
 
 ### 1. Clone the Repository
 
+```bash
 git clone https://github.com/zaid168/ai_driven_burnin_test.git
 cd ai_driven_burnin_test
-
+```
 
 ### 2. Create a Virtual Environment
 
-**Windows PowerShell:**
+On Windows PowerShell:
 
-
+```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+```
 
+A virtual environment isolates the project's Python dependencies from other Python projects.
 
-If PowerShell blocks environment activation, you can invoke the environment's Python directly instead.
+If PowerShell prevents environment activation, you can use the virtual environment's Python executable directly.
 
 ### 3. Install Dependencies
 
-
+```powershell
 python -m pip install -r requirements.txt
-
+```
 
 ### 4. Run the Application
 
-From the project root:
+From the project root, execute:
 
-
+```powershell
 python run.py
-
-
-Once the application starts, open:
-
-text
-http://localhost:8501
-
+```
 
 The launcher runs the prediction pipeline and starts the Streamlit dashboard.
 
+Open the following address in your browser:
+
+```text
+http://localhost:8501
+```
+
 ## Running with Docker
 
-Make sure Docker Desktop is running, then execute these commands from the project root:
+Docker provides a containerized environment for running the application without manually setting up the project's Python dependencies on the host.
 
+Ensure Docker Desktop is running, then execute these commands from the project root.
 
+### Build and Start
+
+```bash
 docker compose up --build
+```
 
+Open the dashboard:
 
-Open the dashboard at:
-
-text
+```text
 http://localhost:8501
+```
 
+### Stop the Application
 
-To stop the application:
-
-
+```bash
 docker compose down
+```
 
+## Model Artifacts
+
+The repository includes saved model artifacts:
+
+| File                       | Purpose                                    |
+| -------------------------- | ------------------------------------------ |
+| `zenith_model.pkl`         | Trained Random Forest classification model |
+| `zenith_anomaly_model.pkl` | Trained Isolation Forest anomaly detector  |
+
+These artifacts allow the inference pipeline to use the saved models without retraining them.
+
+Only load model files from trusted sources. Pickle-based model files can execute code when loaded and should not be treated as safe for untrusted inputs.
 
 ## Reproducibility
 
-The repository includes trained model artifacts so inference can be run without retraining the models.
+The repository includes:
 
-To retrain or regenerate results, review the scripts under `src/` and confirm their input paths and output behaviour before execution.
+* Source code for feature engineering and inference
+* Scripts for model training and evaluation
+* Saved model artifacts
+* Dataset files
+* Dependency specifications
+* Docker configuration
+* Generated predictions and analysis outputs
+
+For reproducible experiments, use the provided dependency files and document any changes to the dataset, model configuration, or evaluation procedure.
 
 ## Limitations and Future Work
 
-* The current dataset is synthetic and may not capture the complexity of real semiconductor failure behaviour.
-* Model performance requires validation using independent, representative data.
+* The dataset is synthetic and may not capture the complexity of real semiconductor failure behaviour.
+* Model performance requires validation using independent and representative data.
 * Anomaly detection identifies unusual patterns, not confirmed defects.
 * Candidate recommendations require validation against manufacturing requirements.
-* Future work could explore additional telemetry features, improved temporal modelling, explainability, and evaluation on real or appropriately simulated production data.
+* Synthetic-data performance may not generalize to real-world operating conditions.
+
+Potential future improvements include:
+
+* Validation using representative semiconductor telemetry
+* More advanced temporal feature engineering
+* Improved model explainability
+* Additional anomaly-detection approaches
+* Evaluation of false-positive and false-negative costs
+* Integration with real burn-in testing workflows
 
 ## Disclaimer
 
-Zenith is an experimental analytics prototype intended for educational and research purposes. It is not a certified semiconductor testing system and should not be used as the sole basis for manufacturing, quality-control, or reliability decisions.
+Zenith is an experimental analytics prototype intended for educational and research purposes. It is not a certified semiconductor testing system and must not be used as the sole basis for manufacturing, quality-control, or reliability decisions.
