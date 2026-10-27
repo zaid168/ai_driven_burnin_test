@@ -1,75 +1,64 @@
-# ai_driven_burnin_test
-
 # Zenith — AI-Driven Burn-in Testing
 
-An AI-driven semiconductor burn-in analytics prototype that combines supervised classification and unsupervised anomaly detection to assess chip risk from burn-in telemetry.
+An AI-driven semiconductor burn-in analytics prototype that combines supervised machine learning and unsupervised anomaly detection to assess chip risk from burn-in telemetry.
 
 ## Overview
 
 Traditional burn-in testing evaluates semiconductor reliability by operating chips under controlled stress conditions and monitoring their behaviour.
 
-Zenith analyses chip-level telemetry to identify risk categories and unusual measurement patterns.
+Zenith explores how machine learning can assist this process by analysing telemetry, extracting useful features, classifying chip risk, and identifying unusual behaviour that may warrant further investigation.
 
-The prototype combines two machine learning models:
+The project combines a Random Forest classifier with an Isolation Forest anomaly detector and presents the results through an interactive Streamlit dashboard.
 
-* **Random Forest:** Classifies each chip into GREEN, AMBER, or RED risk categories.
-* **Isolation Forest:** Identifies unusual chip behaviour using anomaly detection.
+> **Project status:** Research and development prototype using a synthetic burn-in dataset. The results do not establish real-world semiconductor reliability or production readiness.
 
-The outputs are combined into a recommendation to help prioritize chip reviews.
+## Key Features
 
-## Features
+* **Feature engineering:** Converts time-series telemetry into chip-level features.
+* **Supervised classification:** Predicts chip risk categories using a trained Random Forest model.
+* **Anomaly detection:** Uses Isolation Forest to identify unusual telemetry patterns.
+* **Risk-based recommendations:** Produces candidate actions such as `PASS_CANDIDATE`, `REVIEW`, and `REJECT_CANDIDATE`.
+* **Model evaluation:** Includes classification metrics, cross-validation, feature-importance analysis, and error investigation.
+* **Interactive dashboard:** Explores chip telemetry, predictions, model performance, and feature behaviour.
+* **Docker support:** Packages the application and its dependencies for a reproducible runtime environment.
 
-* Chip-level feature engineering from burn-in telemetry.
-* Supervised risk classification.
-* Unsupervised anomaly detection.
-* Combined chip recommendations.
-* Interactive Streamlit dashboard.
-* Model evaluation and cross-validation results.
-* CSV export of chip-level predictions.
-* Docker-based application execution.
+## System Architecture
 
-## Architecture
+text
+Burn-in Telemetry + Chip Labels
+               |
+               v
+       Data Processing
+               |
+               v
+        Feature Engineering
+               |
+               v
+        Chip-Level Features
+               |
+        +------+------+
+        |             |
+        v             v
+ Random Forest   Isolation Forest
+ Classifier      Anomaly Detector
+        |             |
+        +------+------+
+               |
+               v
+       Risk and Anomaly Results
+               |
+               v
+      Candidate Recommendations
+               |
+        +------+------+
+        |             |
+        v             v
+   CSV Predictions  Streamlit Dashboard
 
-```text
-Burn-in Telemetry
-       |
-       v
-Feature Engineering
-       |
-       v
-  +------------------+
-  |                  |
-  v                  v
-Random Forest    Isolation Forest
-  |                  |
-  v                  v
-Risk Category    Anomaly Status
-  |                  |
-  +--------+---------+
-           |
-           v
-   Recommendation
-           |
-           v
-  Prediction Results
-           |
-           v
- Streamlit Dashboard
-```
-
-## Technology Stack
-
-* Python
-* Pandas and NumPy
-* Scikit-learn
-* Joblib
-* Plotly
-* Streamlit
-* Docker and Docker Compose
 
 ## Project Structure
 
-```text
+text
 ai_driven_burnin_test/
 ├── app/
 │   └── dashboard.py
@@ -77,126 +66,212 @@ ai_driven_burnin_test/
 │   ├── zenith_burnin_telemetry.csv
 │   └── zenith_chip_labels.csv
 ├── src/
+│   ├── anomaly_detection.py
 │   ├── features.py
 │   ├── inference.py
 │   ├── predict.py
-│   └── train.py
-├── .dockerignore
-├── .gitignore
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── run.py
+│   ├── train.py
+│   ├── evaluate_model.py
+│   ├── compare_models.py
+│   ├── compare_classes.py
+│   ├── compare_class_weights.py
+│   ├── compare_feature_importance.py
+│   ├── combined_analysis.py
+│   ├── temporal_analysis.py
+│   ├── investigate_errors.py
+│   ├── validate_predictions.py
+│   ├── test_pipeline.py
+│   ├── anazlyze_errors.py
+│   └── plot_class_comparision.py
 ├── zenith_model.pkl
 ├── zenith_anomaly_model.pkl
+├── chip_predictions.csv
+├── run.py
+├── requirements.txt
+├── requirements-lock.txt
+├── Dockerfile
+├── docker-compose.yml
+├── .dockerignore
+├── .gitignore
 └── README.md
-```
 
-Additional evaluation scripts and generated output files may also be present.
 
-## Setup and Execution
+The repository also contains supporting analysis scripts, evaluation outputs, CSV reports, and plots. The tree above highlights the main application components rather than every generated artifact.
 
-### Prerequisites
+## Dataset
 
-* Python 3.12
-* Git
-* Docker Desktop (for containerized execution)
+The project uses two CSV files:
 
-### Run locally
+| File                          | Purpose                                                       |
+| ----------------------------- | ------------------------------------------------------------- |
+| `zenith_burnin_telemetry.csv` | Time-series burn-in telemetry for individual chips            |
+| `zenith_chip_labels.csv`      | Chip-level labels used for supervised learning and evaluation |
 
-Clone the repository and enter its directory:
+The synthetic dataset contains 33,800 telemetry records representing 200 chips.
 
-```bash
-git clone <YOUR_REPOSITORY_URL>
-cd ai_driven_burnin_test
-```
+The chip-label distribution is:
 
-Create and activate a virtual environment.
+| Risk category | Number of chips |
+| ------------- | --------------: |
+| GREEN         |             150 |
+| AMBER         |              20 |
+| RED           |              30 |
+| **Total**     |         **200** |
 
-Windows PowerShell:
+The telemetry is aggregated into chip-level features before being passed to the models.
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
+## Machine Learning Approach
 
-Install dependencies:
+### 1. Feature Engineering
 
-```powershell
-python -m pip install -r requirements.txt
-```
+The feature-engineering pipeline transforms telemetry into chip-level features, including temporal changes and measurements of chip behaviour over the burn-in period.
 
-Run the prediction pipeline:
+The resulting feature matrix contains 200 chip-level rows and 54 columns, including the chip identifier.
 
-```powershell
-python src/predict.py
-```
+### 2. Supervised Classification — Random Forest
 
-This generates `chip_predictions.csv` in the project root.
+The Random Forest classifier predicts one of three risk categories:
 
-### Launch the dashboard locally
+* `GREEN`
+* `AMBER`
+* `RED`
 
-```powershell
-streamlit run app/dashboard.py
-```
+The model uses class weighting to account for differences in the number of examples in each category.
 
-Open `http://localhost:8501` in your browser.
+### 3. Unsupervised Anomaly Detection — Isolation Forest
 
-Alternatively, run the complete application:
+Isolation Forest identifies chips with unusual feature patterns.
 
-```powershell
-python run.py
-```
+An anomaly is an observation that differs from the patterns learned by the model. An anomaly is not automatically proof that a chip is defective.
 
-### Run with Docker
+### 4. Candidate Recommendations
 
-Build and launch the application:
+The inference pipeline combines classification and anomaly results to generate candidate recommendations:
 
-```powershell
-docker compose up --build
-```
+| Condition                                | Recommendation     |
+| ---------------------------------------- | ------------------ |
+| RED classification                       | `REJECT_CANDIDATE` |
+| AMBER classification or detected anomaly | `REVIEW`           |
+| Otherwise                                | `PASS_CANDIDATE`   |
 
-Open `http://localhost:8501`.
-
-Stop the application with:
-
-```powershell
-docker compose down
-```
-
-## Understanding the Recommendations
-
-| Recommendation     | Meaning                                                                           |
-| ------------------ | --------------------------------------------------------------------------------- |
-| `PASS_CANDIDATE`   | The model predicts GREEN and the anomaly detector does not flag the chip.         |
-| `REVIEW`           | The predicted category is AMBER, or the anomaly detector flags unusual behaviour. |
-| `REJECT_CANDIDATE` | The model predicts RED.                                                           |
-
-These are model-generated screening recommendations, not definitive proof of physical chip reliability.
+These are prototype recommendations, not validated manufacturing decisions. Real deployment would require engineering review, representative production data, and validation against established test procedures.
 
 ## Model Evaluation
 
-The project includes model evaluation and cross-validation scripts to assess classification performance.
+The current Random Forest holdout evaluation produced the following results:
 
-Evaluation on training data should not be interpreted as an independent estimate of performance on unseen chips.
+| Metric            | Result |
+| ----------------- | -----: |
+| Accuracy          |  97.0% |
+| Balanced accuracy | 91.67% |
+| GREEN F1-score    |   0.98 |
+| AMBER F1-score    |   0.86 |
+| RED F1-score      |   1.00 |
 
-Because the current dataset is synthetic, the reported results do not establish real-world semiconductor reliability or production readiness.
+Five-fold cross-validation produced:
 
-## Limitations
+| Metric            |  Mean | Standard deviation |
+| ----------------- | ----: | -----------------: |
+| Accuracy          | 0.955 |              0.037 |
+| Balanced accuracy | 0.867 |              0.109 |
+| Macro F1-score    | 0.890 |              0.090 |
 
-* The current dataset is synthetic.
-* Predictions depend on the quality and representativeness of the input telemetry.
-* Anomaly detection identifies unusual patterns, which do not necessarily indicate physical defects.
-* Recommendations require appropriate engineering validation before being used in real manufacturing decisions.
+These results are specific to the current synthetic dataset and experimental setup. They should not be interpreted as expected performance on real semiconductor manufacturing data.
 
-## Future Improvements
+The repository also includes scripts and artifacts for model comparison, feature importance, cross-validation, and prediction-error analysis.
 
-* Validate the models on real semiconductor burn-in datasets.
-* Improve input validation and automated testing.
-* Add model and data versioning.
-* Deploy the inference service independently if scaling requirements justify it.
-* Integrate monitoring and model-drift detection.
+## Streamlit Dashboard
+
+The dashboard provides interactive views for:
+
+* Overview
+* Feature Analysis
+* Chip Explorer
+* Model Predictions
+* Model Evaluation
+* Cross-Validation Results
+
+## Getting Started
+
+### Prerequisites
+
+* Python 3.12 recommended
+* Git
+* Docker Desktop (optional, for containerized execution)
+
+### 1. Clone the Repository
+
+git clone https://github.com/zaid168/ai_driven_burnin_test.git
+cd ai_driven_burnin_test
+
+
+### 2. Create a Virtual Environment
+
+**Windows PowerShell:**
+
+
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+
+If PowerShell blocks environment activation, you can invoke the environment's Python directly instead.
+
+### 3. Install Dependencies
+
+
+python -m pip install -r requirements.txt
+
+
+### 4. Run the Application
+
+From the project root:
+
+
+python run.py
+
+
+Once the application starts, open:
+
+text
+http://localhost:8501
+
+
+The launcher runs the prediction pipeline and starts the Streamlit dashboard.
+
+## Running with Docker
+
+Make sure Docker Desktop is running, then execute these commands from the project root:
+
+
+docker compose up --build
+
+
+Open the dashboard at:
+
+text
+http://localhost:8501
+
+
+To stop the application:
+
+
+docker compose down
+
+
+## Reproducibility
+
+The repository includes trained model artifacts so inference can be run without retraining the models.
+
+To retrain or regenerate results, review the scripts under `src/` and confirm their input paths and output behaviour before execution.
+
+## Limitations and Future Work
+
+* The current dataset is synthetic and may not capture the complexity of real semiconductor failure behaviour.
+* Model performance requires validation using independent, representative data.
+* Anomaly detection identifies unusual patterns, not confirmed defects.
+* Candidate recommendations require validation against manufacturing requirements.
+* Future work could explore additional telemetry features, improved temporal modelling, explainability, and evaluation on real or appropriately simulated production data.
 
 ## Disclaimer
 
-Zenith is an experimental analytics prototype intended for demonstration and research. It is not a certified semiconductor testing or production-release system.
+Zenith is an experimental analytics prototype intended for educational and research purposes. It is not a certified semiconductor testing system and should not be used as the sole basis for manufacturing, quality-control, or reliability decisions.
