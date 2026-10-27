@@ -11,6 +11,18 @@ An AI-driven semiconductor burn-in analytics prototype that combines supervised 
 
 ---
 
+## Dashboard Preview
+
+### Overview
+![Zenith Dashboard Overview](docs/screenshots/overview.png)
+
+### Model Predictions
+![Zenith Model Predictions](docs/screenshots/predictions.png)
+
+### Model Evaluation
+![Zenith Model Evaluation](docs/screenshots/evaluation.png)
+
+---
 ## Overview
 
 Traditional semiconductor burn-in testing evaluates chip reliability by operating devices under controlled stress conditions while monitoring their behaviour.
