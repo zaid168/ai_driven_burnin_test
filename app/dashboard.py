@@ -1,16 +1,19 @@
 import sys
 from pathlib import Path
 import joblib
-
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-# Allow Python to import our existing feature engineering module
+# Define project root
 ROOT = Path(__file__).resolve().parent.parent
+
+# Add src folder to Python's import path
 sys.path.insert(0, str(ROOT / "src"))
 
+# Import modules from src
 from features import build_features
+from inference import generate_predictions as run_inference
 
 
 # --------------------------------------------------
@@ -70,75 +73,8 @@ def load_models():
 
 
 @st.cache_data
-
-@st.cache_data
 def generate_predictions():
-    risk_model, anomaly_model = load_models()
-
-    telemetry = pd.read_csv(
-        ROOT / "data" / "zenith_burnin_telemetry.csv"
-    )
-
-    features = build_features(telemetry)
-
-    # Random Forest expects 53 features
-    risk_columns = list(risk_model.feature_names_in_)
-    X_risk = features[risk_columns]
-
-    # Isolation Forest expects 29 features
-    anomaly_columns = list(anomaly_model.feature_names_in_)
-    X_anomaly = features[anomaly_columns]
-
-    # Generate predictions using the correct feature sets
-    results = features[["chip_id"]].copy()
-
-    results["predicted_triage"] = risk_model.predict(X_risk)
-
-    results["anomaly_prediction"] = anomaly_model.predict(X_anomaly)
-    results["anomaly_score"] = anomaly_model.decision_function(
-        X_anomaly
-    )
-
-    results["anomaly_status"] = results["anomaly_prediction"].map({
-        1: "NORMAL",
-        -1: "ANOMALY"
-    })
-
-    # Include important measurements
-    measurement_columns = [
-        "max_leakage",
-        "leakage_change",
-        "max_ddq",
-        "delay_change"
-    ]
-
-    for column in measurement_columns:
-        results[column] = features[column].values
-
-    # Combine the model outputs
-    def make_recommendation(row):
-        if row["predicted_triage"] == "RED":
-            return "REJECT_CANDIDATE"
-
-        if (
-            row["predicted_triage"] == "AMBER"
-            or row["anomaly_status"] == "ANOMALY"
-        ):
-            return "REVIEW"
-
-        return "PASS_CANDIDATE"
-
-    results["recommendation"] = results.apply(
-        make_recommendation,
-        axis=1
-    )
-
-    return results
-
-
-# --------------------------------------------------
-# 3. SIDEBAR
-# --------------------------------------------------
+    return run_inference()
 
 page = st.sidebar.radio(
     "Choose a section",
@@ -151,8 +87,6 @@ page = st.sidebar.radio(
         "Cross-Validation Results"
     ]
 )
-
-
 # --------------------------------------------------
 # 4. OVERVIEW
 # --------------------------------------------------
